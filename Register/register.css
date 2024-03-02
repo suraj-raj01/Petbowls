@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* ============navbar style start================= */
+.navbar {
+  z-index: 10;
+  height: 70px;
+  background-color: white;
+  display: grid;
+  row-gap: 20px;
+  position: sticky;
+  top: 0px;
+  grid-template-columns: auto auto auto;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar #start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar #mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar #mid a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar #last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.navbar #last a {
+  color: black;
+}
+
+.navbar #last #carts sup {
+  padding: 3px 6px;
+  font-weight: bold;
+  font-size: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #0F4224;
+  color: white;
+}
+
+/* ============================navbar style end================= */
+.hero {
+  height: 750px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: white;
+}
+
+.hero #box1 {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero #box1 #register {
+  font-size: 45px;
+  font-weight: bolder;
+  padding: 15px 0px;
+  color: #0F4224;
+}
+
+.hero #box1 a {
+  text-decoration: none;
+  color: #0F4224;
+}
+
+.hero #box2 {
+  margin: 0 auto;
+  gap: 15px;
+  height: 600px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero #box2 #register {
+  font-size: 25px;
+  font-weight: bold;
+  color: #0F4224;
+  padding: 10px 0px;
+}
+
+.hero #box2 input {
+  width: 90%;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px gray;
+  font-size: 16px;
+}
+
+.hero #box2 #btn1 {
+  padding: 15px 15px;
+  width: 90%;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background-color: #5EA274;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.hero #box2 #btn2 {
+  padding: 15px 15px;
+  width: 90%;
+  font-weight: bold;
+  font-size: 16px;
+  color: #0F4224;
+  background-color: white;
+  border: 2px solid #0F4224;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.hero #box2 #btn2 a {
+  color: #0F4224;
+  text-decoration: none;
+}
+
+.hero #box2 button:hover {
+  transform: scaleY(1.08);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* =================footer================= */
+footer {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0F4224;
+}
+
+footer #box1 {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid; */
+}
+
+footer #box1 #box1-box1 {
+  height: 300px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* border: 1px solid; */
+}
+
+footer #box1 #box1-box1 #para1 {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+footer #box1 #box1-box1 #para2 {
+  padding: 20px;
+  color: white;
+}
+
+footer #box1 #box1-box1 input {
+  margin-left: 10px;
+  height: 50px;
+  width: 400px;
+  border-radius: 50px;
+  padding: 0px 40px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer #box1 #box1-box2 {
+  height: 300px;
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid; */
+}
+
+footer #box1 #box1-box2 ul li {
+  list-style-type: none;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+footer #box1 #box1-box2 ul li:hover {
+  text-decoration: underline;
+}
+
+footer #box1 #box1-box2 ul #main {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer #box2 {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer #box2 #first {
+  height: 50px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer #box2 #first a {
+  color: white;
+}
+
+footer #box2 #second {
+  height: 50px;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: bold; */
+  color: white;
+}
+
+footer #box2 #third {
+  height: 50px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* ============navbar style start================= */
+.navbar {
+    z-index: 10;
+    height: 70px;
+    background-color: white;
+    display: grid;
+    row-gap: 20px;
+    position: sticky;
+    top: 0px;
+    grid-template-columns: auto auto auto;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar #start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar #mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar #mid a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar #last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.navbar #last a {
+    color: black;
+}
+.navbar #last #carts sup{
+    padding: 3px 6px;
+    font-weight: bold;
+    font-size: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0F4224;
+    color: white;
+ }
+
+/* ============================navbar style end================= */
+
+/* ===============hero section style start======================= */
+
+
+.hero {
+    background-color: #f5f6dc;
+    height: 620px;
+    /* border: 1px solid; */
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+}
+
+.hero #box1 {
+    height: 500px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.hero #box1 #para1 {
+    height: 150px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+    font-size: 60px;
+    font-weight: bold;
+    color: #0F4224;
+}
+
+.hero #box1 #para2 {
+    height: 70px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+    font-size: 16px;
+    font-weight: bold;
+    color: #5EA274;
+}
+
+.hero #box1 #btn {
+    height: 80px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.hero #box1 #btn button {
+    padding: 18px 35px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #5EA274;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.hero #box1 #btn button:hover {
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.hero #box2 {
+    height: 500px;
+    width: 600px;
+    /* border: 1px solid; */
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 10px grey);
+    animation: image infinite 40s step-end;
+}
+
+@keyframes image {
+    0%{
+        background-image: url('https://static.vecteezy.com/system/resources/previews/020/899/526/original/happy-dog-transparent-background-png.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+    20% {
+        background-image: url('https://png.pngtree.com/png-vector/20231014/ourmid/pngtree-yorkshire-terrier-dog-isolated-png-image_10157901.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    40% {
+        background-image: url('https://www.dognomics.com/wp-content/uploads/2022/06/B12.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    60% {
+        background-image: url('https://www.freeiconspng.com/uploads/dog-png-21.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    80% {
+        background-image: url('https://i.pinimg.com/originals/8d/d3/50/8dd35056333cb7020eeb9f713b5bad9d.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    90% {
+        background-image: url('https://purepng.com/public/uploads/medium/purepng.com-doganimalsdogboy-981524673170qsdbl.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+}
+
+
+/* =============media tag===================== */
+
+@media (max-width: 425px)
+{
+    .navbar{
+        overflow-x: hidden;
+    }
+    .hero{
+        height: 900px;
+        overflow-x: hidden;
+        display: block;
+    }
+    .hero #box1 #para1 {
+        height: 150px;
+        width: 90%;
+        display: block;
+        font-size: 50px;
+    }
+    
+    .hero #box1 #para2 {
+        font-size: 16px;
+    }
+
+    .hero #box2 {
+        height: 300px;
+        width: 400px;
+        /* border: 1px solid; */
+        object-fit: contain;
+        filter: drop-shadow(0px 0px 10px grey);
+        animation: image infinite 40s step-end;
+    }
+}
+
+
+
+/* ===================section============================ */
+section #section{
+    height: 700px;
+    width: 100%;
+    overflow-x: hidden;
+    border: 1px solid;
+}
+
+#section #box1{
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    /* border: 1px solid; */
+}
+#section #box1 #img-box{
+    height: 400px;
+    width: 600px;
+    background-image: url('https://next.minimog.co/cdn/shop/files/4_f74d0f00-c053-4370-aeb8-e316a3685462.jpg?v=1630658251&width=720');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid; */
+}
+
+#section #box1 #text-box{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+#section #box1 #text-box #para1{
+    height: 120px;
+    /* border: 1px solid; */
+    font-size: 50px;
+    font-weight: bold;
+    color: #0F4224;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#section #box1 #text-box #para2{
+    height: 120px;
+    /* border: 1px solid; */
+    font-size: 16px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#section #box1 #text-box #btn button{
+    padding: 18px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #5EA274;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+#section #box1 #text-box #btn button:hover{
+    box-shadow: 5px 5px 10px grey;
+    cursor: pointer;
+    transition: .4s;
+}
+#section #box2{
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* border: 1px solid; */
+}
+
+#section #box2 #box2-box1{
+    height: 280px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    /* border: 1px solid; */
+}
+#section #box2 #box2-box1 img{
+    transition: .5s;
+}
+#section #box2 #box2-box1 img:hover{
+    scale: .9;
+    transition: .4s;
+}
+#section #box2 #box2-box1 #para1{
+    font-weight: bold;
+    font-size: 20px;
+}
+#section #box2 #box2-box1 #para2{
+    font-size: 16px;
+    color: grey;
+}
+
+/* ======================media tag================== */
+@media (max-width: 425px)
+{
+    section{
+        height: 1500px;
+        overflow-x: hidden;
+        display: block;
+    }
+    #section #box1{
+        grid-template-columns: auto;
+    }
+    #section #box1 #img-box{
+        height: 300px;
+        width: 100%;
+    }
+    #section #box1 #text-box{
+        display: block;
+        width: 100%;
+        height: 600px;
+    }
+    #section #box1 #text-box #para1{
+        font-size: 30px;
+    }
+    #section #box1 #text-box #para2{
+        font-size: 14px;
+    }
+    #section #box1 #text-box #btn button{
+        padding: 12px 20px;
+    }
+    #section #box2{
+        height: 1000px;
+        grid-template-columns: auto;
+    }
+}
+
+/* =============products=============== */
+
+
+#products{
+    height: 700px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+#products #box1{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+#products #box1 #para1{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 15px;
+    color: #0F4224;
+}
+#products #box1 #para2{
+    font-size: 16px;
+    color: grey;
+}
+
+#products #box2{
+    height: 520px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    /* border: 1px solid; */
+}
+#products #box2 #box2-box1{
+    height: 420px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    /* border: 1px solid; */
+}
+#products #box2 #box2-box1:hover{
+    box-shadow: 0px 8px 15px #dfdcdc;
+}
+#products #box2 #box2-box1 img{
+    transition: .7s;
+}
+#products #box2 #box2-box1 img:hover{
+    scale: 1.06;
+    cursor: pointer;
+    transition: .5s;
+}
+#products #box2 #box2-box1 #para1{
+    font-weight: bold;
+    font-size: 18px;
+}
+#products #box2 #box2-box1 #para2{
+    font-weight: bold;
+    font-size: 16px;
+    color: #5EA274;
+}
+#products #box2 #box2-box1 button{
+    background-color: transparent;
+    padding: 12px;
+    width: 90%;
+    border: 2px solid #0F4224;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+#products #box2 #box2-box1 button:hover{
+    background-color: #5EA274;
+    border-color: #5EA274;
+    color: white;
+}
+
+/* ===============media====================================== */
+@media(max-width: 425px){
+#products{
+    height: 1900px;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+    /* border: 1px solid; */
+}
+
+#products #box1{
+    display: block
+}
+#products #box1 #para1{
+    font-weight: bold;
+    font-size: 30px;
+}
+#products #box1 #para2{
+    font-size: 16px;
+    color: grey;
+}
+
+#products #box2{
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 0px;
+    /* border: 1px solid; */
+}
+#products #box2 #box2-box1{
+    height: 420px;
+    width: 270px;
+}
+}
+
+/* ===============rigth for your pet===================== */
+
+
+.right-way{
+    height: 700px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+.right-way #box1{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* border: 1px solid; */
+}
+.right-way #box1 #para1{
+    font-weight: bold;
+    font-size: 40px;
+    color: #0F4224;
+}
+.right-way #box1 #para2{
+    font-size: 17px;
+    padding: 10px;
+    color: grey;
+}
+.right-way #box2{
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    /* border: 1px solid; */
+}
+
+.right-way #box2-box1{
+    height: 350px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid; */
+}
+.right-way #box2-box1 #img{
+    height: 270px;
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid; */
+}
+.right-way #box2-box1 #img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.right-way #box2-box1 #img img:hover{
+    transform: scale(1.07);
+    transition: .5s;
+}
+.right-way #box2-box1 #text{
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    transition: .5s;
+    /* border: 1px solid; */
+}
+.right-way #box2-box1 #text:hover{
+    color: #0F4224;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* ================media====================== */
+@media(max-width: 425px)
+{
+    .right-way{
+        height: 1350px;
+        width: 100%;
+        overflow-x: hidden;
+        /* border: 1px solid; */
+    }
+    
+    .right-way #box1{
+        height: 200px;
+        width: 100%;
+        display: block
+    }
+    .right-way #box1 #para1{
+        font-size: 30px;
+    }
+    .right-way #box1 #para2{
+        font-size: 17px;
+    }
+    .right-way #box2{
+        grid-template-columns: auto;
+    }
+    
+    .right-way #box2-box1{
+        height: 350px;
+        width: 400px;
+        display: block;
+    }
+}
+
+
+/* ==================story style==================== */
+
+.story{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid; */
+}
+.story #box1{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    gap: 10px;
+}
+.story #box1 #para1{
+    font-weight: bold;
+    color: #0F4224;
+    font-size: 35px;
+}
+.story #box1 #para1 span{
+    color: #5EA274;
+}
+.story #box1 #para2{
+    color: grey;
+    padding: 10px;
+}
+.story #box1 button{
+    padding: 12px 20px;
+    border: 2px solid #0F4224;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0F4224;
+    transition: .5s;
+}
+.story #box1 button:hover{
+    background-color: #5EA274;
+    border-color: #5EA274;
+    color: white;
+    cursor: pointer;
+    scale: 1.08;
+    transition: .5s;
+}
+.story #box2{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    /* border: 1px solid; */
+}
+.story #box2 #box2-box1{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    /* border: 1px solid; */
+}
+.story #box2 #box2-box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.story #box2 #box2-box1 img:hover{
+    scale: 1.05;
+    transition: .4s;
+}
+
+/* =================media====================== */
+
+@media(max-width: 425px)
+{
+    .story{
+        height: 1500px;
+        width: 100%;
+        display: block;
+        overflow-x: hidden;
+    }
+    .story #box1{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+    .story #box1 #para1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .story #box1 p{
+        text-align: center;
+    }
+    .story #box2{
+        height: 400px;
+        width: 100%;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+}
+
+/* =================footer================= */
+
+footer{
+    height: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0F4224;
+}
+footer #box1{
+    height: 320px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid; */
+}
+footer #box1 #box1-box1{
+    height: 300px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+footer #box1 #box1-box1 #para1{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+footer #box1 #box1-box1 #para2{
+    padding: 20px;
+    color: white;
+}
+footer #box1 #box1-box1 input{
+    margin-left: 10px;
+    height: 50px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 0px 40px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer #box1 #box1-box2{
+    height: 300px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid; */
+}
+
+footer #box1 #box1-box2 ul li{
+    list-style-type: none;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+footer #box1 #box1-box2 ul li:hover{
+    text-decoration: underline;
+}
+footer #box1 #box1-box2 ul #main{
+    font-size: 18px;
+    font-weight: bold;
+}
+footer #box2{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+footer #box2 #first{
+    height: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+footer #box2 #first a{
+    color: white;
+}
+footer #box2 #second{
+    height: 50px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-weight: bold; */
+    color: white;
+}
+footer #box2 #third{
+    height: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+}
+
+/* =========================media============================ */
+
+@media(max-width: 425px)
+{
+    footer{
+        height: 500px;
+        width: 100%;
+        display: block;
+        overflow-x: hidden;
+    }
+    footer #box1{
+        height: 300px;
+        width: 100%;
+        display: block;
+        /* border: 1px solid; */
+    }
+    footer #box1 #box1-box1{
+        height: 200px;
+        width: 550px;
+        display: block;
+        margin: 0 auto;
+        /* border: 1px solid; */
+    }
+    footer #box1 #box1-box1 #para1{
+        padding: 10px;
+        font-size: 30px;
+    }
+    footer #box1 #box1-box1 #para2{
+        padding: 20px;
+        color: white;
+    }
+
+    footer #box1 #box1-box2{
+        height: 300px;
+        width: 100%;
+        display: flex;
+    }
+    footer #box2{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        display: none;
+    
+    }
+    footer #box2 #first{
+        height: 50px;
+        width: 30%;
+        display: flex;
+    }
+    footer #box2 #first a{
+        color: white;
+    }
+    footer #box2 #second{
+        height: 50px;
+        width: 15%;
+        display: flex;
+    }
+    footer #box2 #third{
+        height: 50px;
+        width: 30%;
+        display: flex;
+    }
+    
+}
+
+
