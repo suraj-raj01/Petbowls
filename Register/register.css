@@ -66,7 +66,7 @@ html {
   font-size: 10px;
   border: none;
   border-radius: 50%;
-  background-color: #0F4224;
+  background-color: black;
   color: white;
 }
 
@@ -184,7 +184,7 @@ html {
 }
 
 .hero #box2 input {
-  width: 90%;
+  width: 95%;
   padding: 15px 15px;
   border: none;
   border-radius: 5px;
@@ -307,6 +307,7 @@ footer #box1 #box1-box1 input {
   outline: none;
   font-size: 14px;
   font-weight: bold;
+  box-shadow: 0px 0px 1px black;
 }
 
 footer #box1 #box1-box1 button {
@@ -393,6 +394,16 @@ footer #box2 #third {
 }
 
 /* =========================media============================ */
+@media (max-width: 1025px) {
+  footer #box2 #third img {
+    width: 95%;
+  }
+}
+@media (max-width: 769px) {
+  footer #box2 #third img {
+    width: 95%;
+  }
+}
 @media (max-width: 430px) {
   footer {
     height: 700px;
