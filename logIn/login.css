@@ -70,6 +70,75 @@ html {
    color: white;
 }
 
+/* ==============medea============================ */
+
+#logo{
+    display: none;
+}
+#chck, #bars{
+    display: none;
+}
+
+@media(max-width: 769px){
+.navbar{
+    display: none;
+    overflow-x: hidden;
+}
+#chck{
+    display: none;
+}
+
+#logo{
+    display: block;
+    position: absolute;
+    z-index: 11;
+    margin-left: 220px;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+    #bars{
+        display: block;
+        position: relative;
+        z-index: 10;
+        text-align: start;
+        padding: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: white;
+    }
+    #chck:checked~ .navbar{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    #chck:checked~ .navbar #start{
+        display: none;
+    }
+    #chck:checked~ .navbar #mid{
+        display: block;
+    }
+    #chck:checked~ .navbar #mid a{
+        display: block;
+        padding: 10px;
+    }
+    #chck:checked~ .navbar #last{
+        display: flex;
+    }
+    #chck:checked~ .navbar #last a{
+        text-decoration: none;
+        font-size: 22px;
+        display: flex;
+        padding: 10px;
+    }
+
+}
 
 /* =====================navbar end=================== */
 .hero{
@@ -140,10 +209,12 @@ html {
     border-radius: 25px;
     font-size: 16px;
     border: none;
+    transition: .5s;
 }
 .hero #box2 #loginPage button:hover{
     box-shadow: 5px 5px 2px gray;
     cursor: pointer;
+    transition: .5s;
 }
 
 .hero #box2 #signupPage{
@@ -172,14 +243,48 @@ html {
     border-radius: 25px;
     font-size: 16px;
     border: none;
+    transition: .5s;
 }
 .hero #box2 #signupPage button:hover{
     box-shadow: 5px 5px 2px gray;
     cursor: pointer;
+    transition: .5s;
 }
 
+/* ==================hero media=================== */
 
+@media(max-width: 430px)
+{
+.hero{
+    height: 1000px;
+    overflow-x: hidden;
+}
+.hero #box2{
+    height: 750px;
+    width: 100%;
+    display: block
+}
+.hero #box2 #loginPage{
+    height: 400px;
+    width: 100%;
+    align-items: center;
+}
 
+.hero #box2  button{
+   width: 90%;
+}
+.hero #box2 #loginPage button:hover{
+    box-shadow: 5px 5px 2px gray;
+    cursor: pointer;
+}
+
+.hero #box2 #signupPage{
+    height: 400px;
+    width: 100%;
+    align-items: center;
+}
+
+}
 /* =================footer================= */
 
 footer{
@@ -289,3 +394,68 @@ footer #box2 #third{
     justify-content: start;
     cursor: pointer;
 }
+
+
+/* =========================media============================ */
+
+@media(max-width: 430px)
+{
+    footer{
+        height: 700px;
+        width: 100%;
+        display: block;
+        overflow-x: hidden;
+    }
+    footer #box1{
+        height: 300px;
+        width: 100%;
+        display: block;
+        /* border: 1px solid; */
+    }
+    footer #box1 #box1-box1{
+        height: 200px;
+        width: 550px;
+        display: block;
+        margin: 0 auto;
+        /* border: 1px solid; */
+    }
+    footer #box1 #box1-box1 #para1{
+        padding: 10px;
+        font-size: 30px;
+    }
+    footer #box1 #box1-box1 #para2{
+        font-size: 14px;
+        color: white;
+        text-align: left;
+    }
+
+    footer #box1 #box1-box2{
+        height: 300px;
+        width: 100%;
+        display: flex;
+    }
+    footer #box2{
+        margin-top: 200px;
+        width: 100%;
+        display: block;
+    
+    }
+    footer #box2 #first{
+        width: 100%;
+        display: flex;
+    }
+    footer #box2 #first a{
+        color: white;
+    }
+    footer #box2 #second{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    footer #box2 #third{
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+

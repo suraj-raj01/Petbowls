@@ -70,6 +70,71 @@ html {
   color: white;
 }
 
+#logo {
+  display: none;
+}
+
+#chck, #bars {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .navbar {
+    display: none;
+    overflow-x: hidden;
+  }
+  #chck {
+    display: none;
+  }
+  #logo {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    margin-left: 220px;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  #bars {
+    display: block;
+    position: relative;
+    z-index: 10;
+    text-align: start;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: white;
+  }
+  #chck:checked ~ .navbar {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  #chck:checked ~ .navbar #start {
+    display: none;
+  }
+  #chck:checked ~ .navbar #mid {
+    display: block;
+  }
+  #chck:checked ~ .navbar #mid a {
+    display: block;
+    padding: 10px;
+  }
+  #chck:checked ~ .navbar #last {
+    display: flex;
+  }
+  #chck:checked ~ .navbar #last a {
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    padding: 10px;
+  }
+}
 #hero {
   height: 1500px;
   width: 100%;
@@ -173,6 +238,8 @@ html {
   outline: none;
   font-weight: bold;
   font-size: 14px;
+  padding: 10px;
+  box-shadow: 0px 0px 1px black;
 }
 
 #hero #box2 #box2-box3 {
@@ -223,6 +290,38 @@ html {
   color: #5EA274;
 }
 
+@media (max-width: 430px) {
+  #hero {
+    height: 2400px;
+    overflow-x: hidden;
+    display: block;
+  }
+  #hero #box1 {
+    display: none;
+  }
+  #hero #box2 {
+    height: 1500px;
+    width: 100%;
+    display: block;
+  }
+  #hero #box2 #box2-box1 {
+    height: 150px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  #hero #box2 #box2-box3 {
+    height: 2200px;
+    width: 100%;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  #hero #box2 #box2-box3 div {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+  }
+}
 /* =================footer================= */
 footer {
   height: 420px;
@@ -341,6 +440,64 @@ footer #box2 #third {
   align-items: center;
   justify-content: start;
   cursor: pointer;
+}
+
+/* =========================media============================ */
+@media (max-width: 430px) {
+  footer {
+    height: 700px;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+  }
+  footer #box1 {
+    height: 300px;
+    width: 100%;
+    display: block;
+    /* border: 1px solid; */
+  }
+  footer #box1 #box1-box1 {
+    height: 200px;
+    width: 550px;
+    display: block;
+    margin: 0 auto;
+    /* border: 1px solid; */
+  }
+  footer #box1 #box1-box1 #para1 {
+    padding: 10px;
+    font-size: 30px;
+  }
+  footer #box1 #box1-box1 #para2 {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+  }
+  footer #box1 #box1-box2 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+  }
+  footer #box2 {
+    margin-top: 200px;
+    width: 100%;
+    display: block;
+  }
+  footer #box2 #first {
+    width: 100%;
+    display: flex;
+  }
+  footer #box2 #first a {
+    color: white;
+  }
+  footer #box2 #second {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  footer #box2 #third {
+    width: 100%;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=product.css.map */

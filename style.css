@@ -58,6 +58,7 @@ html {
 }
 
 .navbar #last a {
+    text-decoration: none;
     color: black;
 }
 .navbar #last #carts sup{
@@ -69,6 +70,76 @@ html {
     background-color: #0F4224;
     color: white;
  }
+
+/* ===================navbar========================= */
+
+#logo{
+    display: none;
+}
+#chck, #bars{
+    display: none;
+}
+
+@media(max-width: 769px){
+.navbar{
+    display: none;
+    overflow-x: hidden;
+}
+#chck{
+    display: none;
+}
+
+#logo{
+    display: block;
+    position: absolute;
+    z-index: 11;
+    margin-left: 220px;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+    #bars{
+        display: block;
+        position: relative;
+        z-index: 10;
+        text-align: start;
+        padding: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: white;
+    }
+    #chck:checked~ .navbar{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    #chck:checked~ .navbar #start{
+        display: none;
+    }
+    #chck:checked~ .navbar #mid{
+        display: block;
+    }
+    #chck:checked~ .navbar #mid a{
+        display: block;
+        padding: 10px;
+    }
+    #chck:checked~ .navbar #last{
+        display: flex;
+    }
+    #chck:checked~ .navbar #last a{
+        text-decoration: none;
+        font-size: 22px;
+        display: flex;
+        padding: 10px;
+    }
+
+}
 
 /* ============================navbar style end================= */
 
@@ -210,7 +281,7 @@ html {
 
 /* =============media tag===================== */
 
-@media (max-width: 425px)
+@media (max-width: 430px)
 {
     .navbar{
         overflow-x: hidden;
@@ -252,7 +323,7 @@ section #section{
 }
 
 #section #box1{
-    height: 500px;
+    height: 600px;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
@@ -262,6 +333,7 @@ section #section{
     /* border: 1px solid; */
 }
 #section #box1 #img-box{
+    margin: 0;
     height: 400px;
     width: 600px;
     background-image: url('https://next.minimog.co/cdn/shop/files/4_f74d0f00-c053-4370-aeb8-e316a3685462.jpg?v=1630658251&width=720');
@@ -272,6 +344,7 @@ section #section{
 }
 
 #section #box1 #text-box{
+    margin: 0px;
     height: 400px;
     width: 600px;
     display: flex;
@@ -353,7 +426,7 @@ section #section{
 }
 
 /* ======================media tag================== */
-@media (max-width: 425px)
+@media (max-width: 430px)
 {
     section{
         height: 1500px;
@@ -364,13 +437,15 @@ section #section{
         grid-template-columns: auto;
     }
     #section #box1 #img-box{
+        margin: 0 auto;
         height: 300px;
-        width: 100%;
+        width: 90%;
     }
     #section #box1 #text-box{
         display: block;
-        width: 100%;
+        width: 90%;
         height: 600px;
+        margin: 0 auto;
     }
     #section #box1 #text-box #para1{
         font-size: 30px;
@@ -378,11 +453,7 @@ section #section{
     #section #box1 #text-box #para2{
         font-size: 14px;
     }
-    #section #box1 #text-box #btn button{
-        padding: 12px 20px;
-    }
     #section #box2{
-        height: 1000px;
         grid-template-columns: auto;
     }
 }
@@ -474,7 +545,7 @@ section #section{
 }
 
 /* ===============media====================================== */
-@media(max-width: 425px){
+@media(max-width: 430px){
 #products{
     height: 1900px;
     width: 100%;
@@ -589,7 +660,7 @@ section #section{
 }
 
 /* ================media====================== */
-@media(max-width: 425px)
+@media(max-width: 430px)
 {
     .right-way{
         height: 1350px;
@@ -604,10 +675,13 @@ section #section{
         display: block
     }
     .right-way #box1 #para1{
-        font-size: 30px;
+        text-align: center;
+        font-size: 25px;
+        padding: 5px;
     }
     .right-way #box1 #para2{
-        font-size: 17px;
+        text-align: center;
+        font-size: 16px;
     }
     .right-way #box2{
         grid-template-columns: auto;
@@ -615,7 +689,7 @@ section #section{
     
     .right-way #box2-box1{
         height: 350px;
-        width: 400px;
+        width: 350px;
         display: block;
     }
 }
@@ -646,6 +720,7 @@ section #section{
     font-weight: bold;
     color: #0F4224;
     font-size: 35px;
+    padding: auto;
 }
 .story #box1 #para1 span{
     color: #5EA274;
@@ -700,7 +775,7 @@ section #section{
 
 /* =================media====================== */
 
-@media(max-width: 425px)
+@media(max-width: 430px)
 {
     .story{
         height: 1500px;
@@ -709,7 +784,7 @@ section #section{
         overflow-x: hidden;
     }
     .story #box1{
-        height: 200px;
+        height: 230px;
         width: 100%;
         display: flex;
         align-content: center;
@@ -717,6 +792,7 @@ section #section{
     .story #box1 #para1{
         text-align: center;
         font-size: 25px;
+        padding: 10px;
     }
     .story #box1 p{
         text-align: center;
@@ -764,7 +840,8 @@ footer #box1 #box1-box1 #para1{
     color: white;
 }
 footer #box1 #box1-box1 #para2{
-    padding: 20px;
+    font-size: 16px;
+    padding: 20px 10px;
     color: white;
 }
 footer #box1 #box1-box1 input{
@@ -841,10 +918,10 @@ footer #box2 #third{
 
 /* =========================media============================ */
 
-@media(max-width: 425px)
+@media(max-width: 430px)
 {
     footer{
-        height: 500px;
+        height: 700px;
         width: 100%;
         display: block;
         overflow-x: hidden;
@@ -867,8 +944,9 @@ footer #box2 #third{
         font-size: 30px;
     }
     footer #box1 #box1-box1 #para2{
-        padding: 20px;
+        font-size: 14px;
         color: white;
+        text-align: left;
     }
 
     footer #box1 #box1-box2{
@@ -877,31 +955,27 @@ footer #box2 #third{
         display: flex;
     }
     footer #box2{
-        height: 60px;
+        margin-top: 200px;
         width: 100%;
-        display: flex;
-        display: none;
+        display: block;
     
     }
     footer #box2 #first{
-        height: 50px;
-        width: 30%;
+        width: 100%;
         display: flex;
     }
     footer #box2 #first a{
         color: white;
     }
     footer #box2 #second{
-        height: 50px;
-        width: 15%;
-        display: flex;
+        width: 100%;
+        display: block;
+        text-align: center;
     }
     footer #box2 #third{
-        height: 50px;
-        width: 30%;
-        display: flex;
+        width: 100%;
+        cursor: pointer;
     }
-    
 }
 
 
