@@ -437,14 +437,13 @@ section #section{
         grid-template-columns: auto;
     }
     #section #box1 #img-box{
-        margin: 0 auto;
-        height: 300px;
+        margin: 20px auto;
+        height: 280px;
         width: 90%;
     }
     #section #box1 #text-box{
         display: block;
         width: 90%;
-        height: 600px;
         margin: 0 auto;
     }
     #section #box1 #text-box #para1{
