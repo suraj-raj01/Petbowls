@@ -369,12 +369,27 @@ footer #box1 #box1-box1 input{
     margin-left: 10px;
     height: 50px;
     width: 400px;
-    border-radius: 50px;
+    border-radius: 5px;
     padding: 0px 40px;
     border: none;
     outline: none;
     font-size: 14px;
     font-weight: bold;
+}
+footer #box1 #box1-box1 button{
+    margin: 10px;
+    padding: 15px 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: green;
+    cursor: pointer;
+}
+footer #box1 #box1-box1 button:hover{
+    background-color: white;
+    color: green;
 }
 
 footer #box1 #box1-box2{
@@ -497,6 +512,7 @@ footer #box2 #third{
     footer #box2 #third{
         width: 100%;
         cursor: pointer;
+        justify-content: center;
     }
 }
 
