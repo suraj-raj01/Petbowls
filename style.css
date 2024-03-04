@@ -179,7 +179,7 @@ html {
 
 
 .hero {
-    background-color: #f5f6dc;
+    background-color: honeydew;
     height: 620px;
     /* border: 1px solid; */
     display: grid;
@@ -263,14 +263,14 @@ html {
 
 @keyframes image {
     0%{
-        background-image: url('https://static.vecteezy.com/system/resources/previews/020/899/526/original/happy-dog-transparent-background-png.png');
+        background-image: url('./Photos/Dog1.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         transition: 1s;
     }
     20% {
-        background-image: url('https://png.pngtree.com/png-vector/20231014/ourmid/pngtree-yorkshire-terrier-dog-isolated-png-image_10157901.png');
+        background-image: url('./Photos/Dog6.webp');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -278,7 +278,7 @@ html {
     }
 
     40% {
-        background-image: url('https://www.dognomics.com/wp-content/uploads/2022/06/B12.png');
+        background-image: url('./Photos/Dog2.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -286,7 +286,7 @@ html {
     }
 
     60% {
-        background-image: url('https://www.freeiconspng.com/uploads/dog-png-21.png');
+        background-image: url('./Photos/Dog3.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -294,7 +294,7 @@ html {
     }
 
     80% {
-        background-image: url('https://i.pinimg.com/originals/8d/d3/50/8dd35056333cb7020eeb9f713b5bad9d.png');
+        background-image: url('./Photos/Dog4.webp');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -302,7 +302,7 @@ html {
     }
 
     90% {
-        background-image: url('https://purepng.com/public/uploads/medium/purepng.com-doganimalsdogboy-981524673170qsdbl.png');
+        background-image: url('./Photos/Dog2.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
