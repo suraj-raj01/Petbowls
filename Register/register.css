@@ -90,7 +90,7 @@ html {
     display: block;
     position: absolute;
     z-index: 11;
-    margin-left: 220px;
+    margin-left: 580px;
     padding: 20px;
     font-size: 30px;
     cursor: pointer;
@@ -133,6 +133,30 @@ html {
     font-size: 22px;
     display: flex;
     padding: 10px;
+  }
+}
+@media (max-width: 426px) {
+  .navbar {
+    overflow-x: hidden;
+  }
+  #logo {
+    margin-left: 240px;
+  }
+}
+@media (max-width: 376px) {
+  .navbar {
+    overflow-x: hidden;
+  }
+  #logo {
+    margin-left: 180px;
+  }
+}
+@media (max-width: 325px) {
+  .navbar {
+    overflow-x: hidden;
+  }
+  #logo {
+    margin-left: 150px;
   }
 }
 /* ============================navbar style end================= */
@@ -227,11 +251,45 @@ html {
   cursor: pointer;
 }
 
+@media (max-width: 1441px) {
+  .hero #box2 {
+    width: 50%;
+  }
+  .hero #box2 #btn1 {
+    width: 95%;
+  }
+  .hero #box2 #btn2 {
+    width: 95%;
+  }
+}
+@media (max-width: 1025px) {
+  .hero #box2 {
+    width: 50%;
+  }
+  .hero #box2 #btn1 {
+    width: 95%;
+  }
+  .hero #box2 #btn2 {
+    width: 95%;
+  }
+}
+@media (max-width: 769px) {
+  .hero #box2 {
+    width: 60%;
+  }
+  .hero #box2 #btn1 {
+    width: 95%;
+  }
+  .hero #box2 #btn2 {
+    width: 95%;
+  }
+}
 @media (max-width: 430px) {
   .hero {
     height: 750px;
     width: 100%;
     display: grid;
+    overflow-x: hidden;
   }
   .hero #box1 {
     margin: 0 auto;
@@ -240,6 +298,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
   }
   .hero #box2 {
     margin: 0 auto;
@@ -250,6 +309,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
   }
   .hero #box2 input {
     width: 90%;
@@ -403,6 +463,17 @@ footer #box2 #third {
   footer #box2 #third img {
     width: 95%;
   }
+  footer #box2 #second {
+    width: 20%;
+  }
+  footer #box1 #box1-box1 input {
+    height: 40px;
+    width: 400px;
+  }
+  footer #box1 #box1-box1 button {
+    padding: 10px 30px;
+    height: 40px;
+  }
 }
 @media (max-width: 430px) {
   footer {
@@ -419,7 +490,7 @@ footer #box2 #third {
   }
   footer #box1 #box1-box1 {
     height: 200px;
-    width: 550px;
+    width: 400px;
     display: block;
     margin: 0 auto;
     /* border: 1px solid; */
@@ -432,6 +503,17 @@ footer #box2 #third {
     font-size: 14px;
     color: white;
     text-align: left;
+  }
+  footer #box1 #box1-box1 input {
+    height: 40px;
+    width: 300px;
+    font-size: 12px;
+  }
+  footer #box1 #box1-box1 button {
+    font-size: 12px;
+    height: 40px;
+    padding: 10px;
+    width: 90px;
   }
   footer #box1 #box1-box2 {
     height: 300px;
@@ -459,6 +541,32 @@ footer #box2 #third {
     width: 100%;
     cursor: pointer;
     justify-content: center;
+  }
+}
+@media (max-width: 376px) {
+  footer #box1 #box1-box1 input {
+    height: 35px;
+    width: 250px;
+    font-size: 12px;
+  }
+  footer #box1 #box1-box1 button {
+    font-size: 12px;
+    height: 35px;
+    padding: 10px;
+    width: 80px;
+  }
+}
+@media (max-width: 325px) {
+  footer #box1 #box1-box1 input {
+    height: 35px;
+    width: 200px;
+    font-size: 12px;
+  }
+  footer #box1 #box1-box1 button {
+    font-size: 12px;
+    height: 35px;
+    padding: 10px;
+    width: 80px;
   }
 }
 
