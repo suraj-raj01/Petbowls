@@ -218,7 +218,7 @@ html {
 
 .hero #box2 #btn1 {
   padding: 15px 15px;
-  width: 90%;
+  width: 95%;
   font-weight: bold;
   font-size: 16px;
   color: white;
@@ -230,7 +230,7 @@ html {
 
 .hero #box2 #btn2 {
   padding: 15px 15px;
-  width: 90%;
+  width: 95%;
   font-weight: bold;
   font-size: 16px;
   color: #0F4224;
@@ -311,8 +311,11 @@ html {
     justify-content: center;
     overflow-x: hidden;
   }
-  .hero #box2 input {
-    width: 90%;
+  .hero #box2 #btn1 {
+    width: 95%;
+  }
+  .hero #box2 #btn2 {
+    width: 95%;
   }
 }
 /* =================footer================= */
