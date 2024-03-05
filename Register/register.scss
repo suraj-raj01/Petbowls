@@ -564,6 +564,15 @@ footer #box2 #third{
 
 @media(max-width: 376px)
 {
+    footer #box1 #box1-box1 #para1{
+        padding: 10px;
+        font-size: 20px;
+    }
+    footer #box1 #box1-box1 #para2{
+        font-size: 12px;
+        color: white;
+        text-align: left;
+    }
     footer #box1 #box1-box1 input{
         height: 35px;
         width: 250px;
@@ -578,6 +587,14 @@ footer #box2 #third{
 }
 @media(max-width: 325px)
 {
+    footer #box1 #box1-box1 #para1{
+        padding: 10px;
+        font-size: 20px;
+    }
+    footer #box1 #box1-box1 #para2{
+        font-size: 12px;
+        text-align: left;
+    }
     footer #box1 #box1-box1 input{
         height: 35px;
         width: 200px;
