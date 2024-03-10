@@ -2,6 +2,8 @@
 <br>
 Author:- SURAJ KUMAR
 <br>
+Responsive:- Yes.
+<br>
 Technology Used:-
 <br>
 HTML
