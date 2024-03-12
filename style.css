@@ -49,6 +49,10 @@ html {
     font-weight: bold;
     color: black;
 }
+.navbar #mid a:hover{
+    color: #0F4224;
+    text-shadow: 0px 0px 60px #0F4224;
+}
 
 .navbar #last {
     display: flex;
@@ -207,38 +211,43 @@ html {
 
 @media(max-width: 1025px)
 {
-   #up-down{
-    display: none;
-   }
+ #up-down{
+    height: 60px;
+    width: 60px;
+ }
 }
 
 @media (max-width: 769px)
 {
-   #up-down{
-    display: none;
-   }
+    #up-down{
+        height: 50px;
+        width: 50px;
+     }
 }
 
 @media (max-width: 430px)
 {
-   #up-down{
-    display: none;
-   }
+    #up-down{
+        height: 50px;
+        width: 50px;
+     }
 }
 
 @media (max-width: 376px)
 {
-   #up-down{
-    display: none;
-   }
+    #up-down{
+        height: 40px;
+        width: 40px;
+     }
 }
 
 
 @media (max-width: 325px)
 {
-   #up-down{
-    display: none;
-   }
+    #up-down{
+        height: 35px;
+        width: 35px;
+     }
 }
 /* ===============hero section style start======================= */
 
@@ -699,25 +708,49 @@ section #section{
         font-size: 14px;
     }
     #section #box2{
-        height: 650px;
+        height: 600px;
         grid-template-columns: auto;
     }
 }
 
 @media (max-width: 376px)
 {
+    section{
+        height: 1650px;
+        overflow-x: hidden;
+        display: block;
+    }
     #section #box1 #text-box #btn button{
         padding: 12px 25px;
         font-size: 14px;
+    }
+    #section #box1{
+        grid-template-columns: auto;
+        height: 600px;
+
+    }
+    #section #box2{
+        height: 900px;
+        grid-template-columns: auto;
     }
 }
 
 @media (max-width: 326px)
 {
+    section{
+        height: 1650px;
+        overflow-x: hidden;
+        display: block;
+    }
+    #section #box1{
+        grid-template-columns: auto;
+        height: 600px;
+    }
     #section #box1 #text-box{
         display: block;
         width: 90%;
         margin: 0 auto;
+        height: 300px;
     }
     #section #box2 #box2-box1{
         height: 280px;
@@ -733,6 +766,10 @@ section #section{
     #section #box1 #text-box #btn button{
         padding: 12px 25px;
         font-size: 14px;
+    }
+    #section #box2{
+        height: 550px;
+        grid-template-columns: auto;
     }
 }
 
