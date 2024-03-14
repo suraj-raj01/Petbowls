@@ -36,7 +36,7 @@
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             <li><a href="./logIn/logIn.html"><i class="fa-regular fa-user"></i></a></li>
             <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-            <li id="carts"><a href="#"><i class="fa-solid fa-cart-plus"><sup>3</sup></i></a></li>
+            <li id="carts"><a href="#"><i class="fa-solid fa-cart-plus"><sup id="count">0</sup></i></a></li>
         </ul>
     </div>
 
@@ -156,7 +156,7 @@
                 </div>
                 <div id="para1">Probiotics Chicken</div>
                 <div id="para2">$42.00</div>
-                <button type="button">Quick Add</button>
+                <button type="button" onclick="inc();">Quick Add</button>
 
             </div>
             <div id="box2-box1">
@@ -166,7 +166,7 @@
                 </div>
                 <div id="para1">Probiotics Chicken</div>
                 <div id="para2">$45.00</div>
-                <button type="button">Quick Add</button>
+                <button type="button" onclick="inc();">Quick Add</button>
             </div>
             <div id="box2-box1">
                 <div id="img">
@@ -175,7 +175,7 @@
                 </div>
                 <div id="para1">Probiotics Chicken</div>
                 <div id="para2">$38.90</div>
-                <button type="button">Quick Add</button>
+                <button type="button" onclick="inc();">Quick Add</button>
             </div>
             <div id="box2-box1">
                 <div id="img">
@@ -184,7 +184,7 @@
                 </div>
                 <div id="para1">Probiotics Chicken</div>
                 <div id="para2">$43.99</div>
-                <button type="button">Quick Add</button>
+                <button type="button" onclick="inc();">Quick Add</button>
             </div>
         </div>
     </div>
@@ -304,6 +304,16 @@
           </div>
         </div>
     </footer>
+
+    <script>
+        let c = document.getElementById('count');
+        let a = 0;
+        function inc()
+        {
+            a++;
+            c.innerHTML = a;
+        }
+    </script>
 </body>
 
 </html>
