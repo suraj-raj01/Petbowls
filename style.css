@@ -188,15 +188,22 @@ html {
     height: 60px;
     width: 60px;
     position: sticky;
-    top: 90vh;
-    left: 95%;
-    background-color: #5EA274;
+    top: 88vh;
+    left: 96%;
+    background-color: black;
     display: flex;
     border-radius: 50%;
+    border: 2px solid;
     align-items: center;
     justify-content: center;
     transition: 1s;
 }
+#up-down:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid;
+}
+
 #up-down i{
     display: block;
     font-size: 20px;
@@ -204,6 +211,11 @@ html {
     color: black;
     padding: 15px 15px;
     color: white;
+    transition: .4s;
+}
+#up-down i:hover{
+    color: black;
+    transition: .4s;
 }
 #up-down a{
     text-decoration: none;
@@ -222,6 +234,7 @@ html {
     #up-down{
         height: 50px;
         width: 50px;
+        left: 95%;
      }
 }
 
@@ -230,6 +243,7 @@ html {
     #up-down{
         height: 50px;
         width: 50px;
+        left: 94%;
      }
 }
 
@@ -238,6 +252,7 @@ html {
     #up-down{
         height: 40px;
         width: 40px;
+        left: 93%;
      }
 }
 
@@ -247,6 +262,7 @@ html {
     #up-down{
         height: 35px;
         width: 35px;
+        left: 92%;
      }
 }
 /* ===============hero section style start======================= */
