@@ -220,7 +220,7 @@ html {
 }
 
 #hero #box2 {
-  height: 1500px;
+  height: 1200px;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -229,7 +229,7 @@ html {
 }
 
 #hero #box2 #box2-box1 {
-  height: 150px;
+  height: 100px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -267,35 +267,35 @@ html {
 }
 
 #hero #box2 #box2-box3 {
-  height: 1300px;
+  height: 1100px;
   width: 90%;
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 40px;
+  grid-template-columns: auto auto auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   overflow: hidden;
 }
 
 #hero #box2 #box2-box3 div {
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 250px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   transition: 0.8s;
 }
 
-#hero #box2 #box2-box3 div:hover {
-  box-shadow: 0px 8px 15px #dfdcdc;
-}
 
 #hero #box2 #box2-box3 div #img img {
   overflow: hidden;
-  width: 280px;
-  object-fit: contain;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid;
+  border-radius: 5px;
 }
 
 #hero #box2 #box2-box3 div #img:hover {
@@ -304,14 +304,21 @@ html {
   transition: 0.8s;
 }
 
-#hero #box2 #box2-box3 div #img img {
-  object-fit: contain;
-}
 
 #hero #box2 #box2-box3 div #para {
   font-weight: bold;
   font-size: 18px;
   color: #5EA274;
+}
+
+@media (max-width: 1024px)
+{
+    #hero #box2 #box2-box3 {
+        height: 2200px;
+        width: 100%;
+        grid-template-columns: auto auto;
+        align-items: center;
+      }
 }
 
 @media (max-width: 769px) {
@@ -377,6 +384,20 @@ html {
     width: 300px;
     border-radius: 5px;
   }
+}
+@media (max-width: 376px)
+{
+      #hero #box2 #box2-box3 {
+        height: 2200px;
+        width: 100%;
+        grid-template-columns: auto;
+        align-items: center;
+      }
+      #hero #box2 #box2-box3 div {
+        height: 250px;
+        width: 250px;
+        border-radius: 5px;
+      }
 }
 /* =================footer================= */
 footer {

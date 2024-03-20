@@ -297,7 +297,7 @@ html {
         width:60%;
     }
     .hero #box2 #signupPage{
-        width: 60%;
+        width: 65%;
     }
 }
 
@@ -320,7 +320,7 @@ html {
 }
 
 .hero #box2  button{
-   width: 90%;
+   width: 400px;
 }
 .hero #box2 #loginPage button:hover{
     box-shadow: 5px 5px 2px gray;
@@ -342,6 +342,20 @@ html {
         overflow-x: hidden;
         display: block;
     }
+    .hero #box2  button{
+        width: 350px;
+     }
+}
+@media(max-width: 320px)
+{
+    .hero{
+        height: 1000px;
+        overflow-x: hidden;
+        display: block;
+    }
+    .hero #box2  button{
+        width: 300px;
+     }
 }
 /* =================footer================= */
 

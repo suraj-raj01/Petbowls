@@ -230,10 +230,10 @@ svg{
     position: sticky;
     top: 88vh;
     left: 96%;
-    background-color: black;
+    background-color: #5EA274;
     display: flex;
     border-radius: 50%;
-    border: 2px solid;
+    border: 2px solid #5EA274;
     align-items: center;
     justify-content: center;
     transition: 1s;
@@ -387,9 +387,9 @@ svg{
     height: 500px;
     width: 600px;
     /* border: 1px solid; */
-    object-fit: contain;
+    object-fit: cover;
     filter: drop-shadow(0px 0px 10px grey);
-    animation: image infinite 40s step-end;
+    animation: image infinite 30s step-end;
 }
 
 @keyframes image {
@@ -398,14 +398,12 @@ svg{
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        transition: 1s;
     }
     20% {
         background-image: url('./Photos/Dog6.webp');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        transition: 1s;
     }
 
     40% {
@@ -413,7 +411,6 @@ svg{
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        transition: 1s;
     }
 
     60% {
@@ -421,7 +418,6 @@ svg{
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        transition: 1s;
     }
 
     80% {
@@ -429,15 +425,13 @@ svg{
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        transition: 1s;
     }
 
     90% {
-        background-image: url('./Photos/Dog2.png');
+        background-image: url('./Photos/dog5.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        transition: 1s;
     }
 }
 
@@ -1584,3 +1578,34 @@ footer #box2 #third{
     }
 }
 
+#discount{
+    position: fixed;
+    z-index: 8;
+    top: 320px;
+    height: 40px;
+    width: 200px;
+    border: 1px solid;
+    margin-left: -82px;
+    transform: rotate(270deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #DA3F3F;
+    border-radius: 5px;
+    border: none;
+}
+
+#discount p{
+    font-weight: bold;
+    color: white;
+}
+#discount i{
+    color: white;
+}
+
+@media(max-width:1024px)
+{
+ #discount{
+    display: none;
+ }
+}
