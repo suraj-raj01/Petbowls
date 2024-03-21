@@ -507,7 +507,7 @@ footer #box2 #third {
   }
   footer #box1 #box1-box1 #para2 {
     font-size: 14px;
-    color: white;
+    color: black;
     text-align: center;
   }
   footer #box1 #box1-box1 input {
@@ -538,9 +538,6 @@ footer #box2 #third {
   footer #box2 #first {
     width: 100%;
     display: flex;
-  }
-  footer #box2 #first a {
-    color: white;
   }
   footer #box2 #second {
     width: 100%;
