@@ -349,7 +349,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #0F4224;
+    background-color: #5EA274;
 }
 footer #box1{
     height: 320px;
@@ -373,12 +373,12 @@ footer #box1 #box1-box1 #para1{
     padding: 10px;
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 footer #box1 #box1-box1 #para2{
     font-size: 16px;
     padding: 20px 10px;
-    color: white;
+    color: black;
 }
 footer #box1 #box1-box1 input{
     margin-left: 10px;
@@ -399,12 +399,14 @@ footer #box1 #box1-box1 button{
     border-radius: 5px;
     font-weight: bold;
     color: #fff;
-    background-color: green;
+    background-color: #0F4224;
     cursor: pointer;
+    transition: .5s;
 }
 footer #box1 #box1-box1 button:hover{
     background-color: white;
-    color: green;
+    color: #0F4224;
+    transition: .5s;
 }
 
 
@@ -420,7 +422,7 @@ footer #box1 #box1-box2{
 footer #box1 #box1-box2 ul li{
     list-style-type: none;
     font-size: 16px;
-    color: white;
+    color: black;
     padding: 10px;
     cursor: pointer;
 }
@@ -448,7 +450,7 @@ footer #box2 #first{
     gap: 20px;
 }
 footer #box2 #first a{
-    color: white;
+    color: black;
 }
 footer #box2 #second{
     height: 50px;
@@ -456,8 +458,8 @@ footer #box2 #second{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* font-weight: bold; */
-    color: white;
+    font-weight: bold;
+    color: black;
 }
 footer #box2 #third{
     height: 50px;
