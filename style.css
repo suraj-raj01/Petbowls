@@ -18,39 +18,39 @@ html {
 
 /* ================svg style========= */
 
-svg{
-   position: absolute;
-   top: 410px;
-   z-index: 0;
+svg {
+    position: absolute;
+    top: 410px;
+    z-index: 1;
 }
-@media(max-width: 1025px)
-{
-    svg{
+
+@media(max-width: 1025px) {
+    svg {
         display: none;
     }
 }
 
-@media(max-width: 769px){
-    svg{
+@media(max-width: 769px) {
+    svg {
         display: none;
     }
 }
 
 
-@media(max-width: 426px)
-{
-    svg{
+@media(max-width: 426px) {
+    svg {
         display: none;
     }
 }
 
-@media(max-width: 376px)
-{    svg{
-    display: none;
+@media(max-width: 376px) {
+    svg {
+        display: none;
+    }
 }
-}
-@media(max-width: 325px){
-    svg{
+
+@media(max-width: 325px) {
+    svg {
         display: none;
     }
 }
@@ -89,7 +89,8 @@ svg{
     font-weight: bold;
     color: black;
 }
-.navbar #mid a:hover{
+
+.navbar #mid a:hover {
     color: #0F4224;
     text-shadow: 0px 0px 60px #0F4224;
 }
@@ -106,7 +107,8 @@ svg{
     text-decoration: none;
     color: #0F4224;
 }
-.navbar #last #carts sup{
+
+.navbar #last #carts sup {
     padding: 3px 6px;
     font-weight: bold;
     font-size: 10px;
@@ -114,44 +116,47 @@ svg{
     border-radius: 50%;
     background-color: #5EA274;
     color: white;
- }
+}
 
 /* ===================navbar========================= */
 
-#logo{
+#logo {
     display: none;
 }
-#chck, #bars{
+
+#chck,
+#bars {
     display: none;
 }
-@media(max-width: 1025px)
-{
-    .navbar{
+
+@media(max-width: 1025px) {
+    .navbar {
         overflow-x: hidden;
     }
 }
 
-@media(max-width: 769px){
-.navbar{
-    display: none;
-    overflow-x: hidden;
-}
-#chck{
-    display: none;
-}
+@media(max-width: 769px) {
+    .navbar {
+        display: none;
+        overflow-x: hidden;
+    }
 
-#logo{
-    display: block;
-    position: absolute;
-    z-index: 11;
-    margin-left: 570px;
-    padding: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: transparent;
-}
+    #chck {
+        display: none;
+    }
 
-    #bars{
+    #logo {
+        display: block;
+        position: absolute;
+        z-index: 11;
+        margin-left: 570px;
+        padding: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    #bars {
         display: block;
         position: relative;
         z-index: 10;
@@ -161,7 +166,8 @@ svg{
         cursor: pointer;
         background-color: white;
     }
-    #chck:checked~ .navbar{
+
+    #chck:checked~.navbar {
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -170,20 +176,25 @@ svg{
         justify-content: center;
         gap: 40px;
     }
-    #chck:checked~ .navbar #start{
+
+    #chck:checked~.navbar #start {
         display: none;
     }
-    #chck:checked~ .navbar #mid{
+
+    #chck:checked~.navbar #mid {
         display: block;
     }
-    #chck:checked~ .navbar #mid a{
+
+    #chck:checked~.navbar #mid a {
         display: block;
         padding: 10px;
     }
-    #chck:checked~ .navbar #last{
+
+    #chck:checked~.navbar #last {
         display: flex;
     }
-    #chck:checked~ .navbar #last a{
+
+    #chck:checked~.navbar #last a {
         text-decoration: none;
         font-size: 22px;
         display: flex;
@@ -192,38 +203,40 @@ svg{
 
 }
 
-@media(max-width: 426px)
-{
-    #logo{
+@media(max-width: 426px) {
+    #logo {
         margin-left: 240px;
     }
 }
 
-@media(max-width: 376px)
-{
-    .navbar{
+@media(max-width: 376px) {
+    .navbar {
         overflow-x: hidden;
     }
-    #logo{
+
+    #logo {
         z-index: 11;
         margin-left: 180px;
     }
 }
-@media(max-width: 325px){
-.navbar{
-    overflow-x: hidden;
+
+@media(max-width: 325px) {
+    .navbar {
+        overflow-x: hidden;
+    }
+
+    #logo {
+        z-index: 11;
+        margin-left: 140px;
+    }
 }
-#logo{
-    z-index: 11;
-    margin-left: 140px;
-}
-}
+
 /* ============================navbar style end================= */
 
 /* ==============up-down arrow style================= */
 
 
-#up-down{
+#up-down {
     display: block;
     height: 60px;
     width: 60px;
@@ -238,13 +251,14 @@ svg{
     justify-content: center;
     transition: 1s;
 }
-#up-down:hover{
+
+#up-down:hover {
     background-color: white;
     color: black;
     border: 1px solid;
 }
 
-#up-down i{
+#up-down i {
     display: block;
     font-size: 20px;
     font-weight: bold;
@@ -253,58 +267,56 @@ svg{
     color: white;
     transition: .4s;
 }
-#up-down i:hover{
+
+#up-down i:hover {
     color: black;
     transition: .4s;
 }
-#up-down a{
+
+#up-down a {
     text-decoration: none;
 }
 
-@media(max-width: 1025px)
-{
- #up-down{
-    height: 60px;
-    width: 60px;
- }
+@media(max-width: 1025px) {
+    #up-down {
+        height: 60px;
+        width: 60px;
+    }
 }
 
-@media (max-width: 769px)
-{
-    #up-down{
+@media (max-width: 769px) {
+    #up-down {
         height: 50px;
         width: 50px;
         left: 95%;
-     }
+    }
 }
 
-@media (max-width: 430px)
-{
-    #up-down{
+@media (max-width: 430px) {
+    #up-down {
         height: 50px;
         width: 50px;
         left: 94%;
-     }
+    }
 }
 
-@media (max-width: 376px)
-{
-    #up-down{
+@media (max-width: 376px) {
+    #up-down {
         height: 40px;
         width: 40px;
         left: 93%;
-     }
+    }
 }
 
 
-@media (max-width: 325px)
-{
-    #up-down{
+@media (max-width: 325px) {
+    #up-down {
         height: 35px;
         width: 35px;
         left: 92%;
-     }
+    }
 }
+
 /* ===============hero section style start======================= */
 
 
@@ -383,22 +395,24 @@ svg{
     box-shadow: 5px 5px 10px grey;
 }
 
-.hero #box2 {
+.hero #box2{
     height: 500px;
-    width: 600px;
-    /* border: 1px solid; */
-    object-fit: cover;
+    width: 650px;
+    background-image: url('./Photos/Dog4.webp');
     filter: drop-shadow(0px 0px 10px grey);
     animation: image infinite 30s step-end;
+    z-index: 0;
 }
 
+
 @keyframes image {
-    0%{
+    0% {
         background-image: url('./Photos/Dog1.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
     }
+
     20% {
         background-image: url('./Photos/Dog6.webp');
         background-position: center;
@@ -437,60 +451,61 @@ svg{
 
 
 /* =============media tag===================== */
-@media(max-width: 1025px)
-{
-    .hero{
+@media(max-width: 1025px) {
+    .hero {
         overflow-x: hidden;
         display: flex;
     }
+
     .hero #box1 #para1 {
         height: 150px;
         width: 90%;
         display: block;
         font-size: 50px;
     }
-    
+
     .hero #box1 #para2 {
         font-size: 16px;
     }
 }
 
-@media (max-width: 769px)
-{
-    .hero{
+@media (max-width: 769px) {
+    .hero {
         height: 600px;
         overflow-x: hidden;
         display: flex;
-    } 
+    }
+
     .hero #box1 #para1 {
         height: 150px;
         width: 90%;
         display: block;
         font-size: 40px;
     }
-    
+
     .hero #box1 #para2 {
         font-size: 14px;
     }
 }
 
-@media (max-width: 430px)
-{
-    .navbar{
+@media (max-width: 430px) {
+    .navbar {
         overflow-x: hidden;
     }
-    .hero{
+
+    .hero {
         height: 900px;
         overflow-x: hidden;
         display: block;
     }
+
     .hero #box1 #para1 {
         height: 150px;
         width: 90%;
         display: block;
         font-size: 50px;
     }
-    
+
     .hero #box1 #para2 {
         font-size: 16px;
     }
@@ -501,26 +516,28 @@ svg{
     }
 }
 
-@media (max-width: 376px)
-{
-    .navbar{
+@media (max-width: 376px) {
+    .navbar {
         overflow-x: hidden;
     }
-    .hero{
+
+    .hero {
         height: 900px;
         overflow-x: hidden;
         display: block;
     }
+
     .hero #box1 #para1 {
         height: 150px;
         width: 90%;
         display: block;
         font-size: 40px;
     }
-    
+
     .hero #box1 #para2 {
         font-size: 14px;
     }
+
     .hero #box1 #btn button {
         padding: 12px 25px;
         font-size: 12px;
@@ -537,15 +554,14 @@ svg{
 }
 
 
-@media (max-width: 325px)
-{
+@media (max-width: 325px) {
     .hero #box1 #para1 {
         height: 150px;
         width: 90%;
         display: block;
         font-size: 30px;
     }
-    
+
     .hero #box1 #para2 {
         font-size: 12px;
     }
@@ -553,14 +569,14 @@ svg{
 
 
 /* ===================section============================ */
-section #section{
+section #section {
     height: 700px;
     width: 100%;
     overflow-x: hidden;
     border: 1px solid;
 }
 
-#section #box1{
+#section #box1 {
     height: 600px;
     width: 100%;
     display: grid;
@@ -570,7 +586,8 @@ section #section{
     column-gap: 40px;
     /* border: 1px solid; */
 }
-#section #box1 #img-box{
+
+#section #box1 #img-box {
     margin: 0;
     height: 400px;
     width: 600px;
@@ -582,12 +599,12 @@ section #section{
     /* border: 1px solid; */
 }
 
-#section #box1 #img-box:hover{
+#section #box1 #img-box:hover {
     scale: .95;
     transition: .5s;
 }
 
-#section #box1 #text-box{
+#section #box1 #text-box {
     margin: 0px;
     height: 400px;
     width: 600px;
@@ -597,7 +614,8 @@ section #section{
     justify-content: center;
     /* border: 1px solid; */
 }
-#section #box1 #text-box #para1{
+
+#section #box1 #text-box #para1 {
     height: 120px;
     /* border: 1px solid; */
     font-size: 50px;
@@ -607,7 +625,8 @@ section #section{
     align-items: center;
     justify-content: start;
 }
-#section #box1 #text-box #para2{
+
+#section #box1 #text-box #para2 {
     height: 120px;
     /* border: 1px solid; */
     font-size: 16px;
@@ -616,7 +635,8 @@ section #section{
     align-items: center;
     justify-content: start;
 }
-#section #box1 #text-box #btn button{
+
+#section #box1 #text-box #btn button {
     padding: 18px 35px;
     font-size: 16px;
     font-weight: bold;
@@ -627,12 +647,14 @@ section #section{
     outline: none;
     transition: .5s;
 }
-#section #box1 #text-box #btn button:hover{
+
+#section #box1 #text-box #btn button:hover {
     box-shadow: 5px 5px 10px grey;
     cursor: pointer;
     transition: .4s;
 }
-#section #box2{
+
+#section #box2 {
     height: 300px;
     width: 100%;
     display: grid;
@@ -643,7 +665,7 @@ section #section{
     /* border: 1px solid; */
 }
 
-#section #box2 #box2-box1{
+#section #box2 #box2-box1 {
     height: 280px;
     width: 400px;
     display: flex;
@@ -653,178 +675,203 @@ section #section{
     text-align: center;
     /* border: 1px solid; */
 }
-#section #box2 #box2-box1 img{
+
+#section #box2 #box2-box1 img {
     transition: .5s;
 }
-#section #box2 #box2-box1 img:hover{
+
+#section #box2 #box2-box1 img:hover {
     scale: .9;
     transition: .4s;
 }
-#section #box2 #box2-box1 #para1{
+
+#section #box2 #box2-box1 #para1 {
     font-weight: bold;
     font-size: 20px;
 }
-#section #box2 #box2-box1 #para2{
+
+#section #box2 #box2-box1 #para2 {
     font-size: 16px;
     color: grey;
 }
 
 /* ======================media tag================== */
-@media (max-width: 1025px)
-{
-   section{
-    height: 1700px;
-    overflow-x: hidden;
-   }
-   #section #box1{
-    margin-top: 20px;
-    grid-template-columns: auto;
-    height: 900px;
-}
-#section #box2{
-    margin-top: 40px;
-    grid-template-columns: auto auto;
-}
-#section #box1 #img-box{
-    margin: 0;
-    height: 400px;
-    width: 600px;
-    background-image: url('https://next.minimog.co/cdn/shop/files/4_f74d0f00-c053-4370-aeb8-e316a3685462.jpg?v=1630658251&width=720');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* border: 1px solid; */
+@media (max-width: 1025px) {
+    section {
+        height: 1700px;
+        overflow-x: hidden;
+    }
+
+    #section #box1 {
+        margin-top: 20px;
+        grid-template-columns: auto;
+        height: 900px;
+    }
+
+    #section #box2 {
+        margin-top: 40px;
+        grid-template-columns: auto auto;
+    }
+
+    #section #box1 #img-box {
+        margin: 0;
+        height: 400px;
+        width: 600px;
+        background-image: url('https://next.minimog.co/cdn/shop/files/4_f74d0f00-c053-4370-aeb8-e316a3685462.jpg?v=1630658251&width=720');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border: 1px solid; */
+    }
+
+    #section #box1 #text-box #para1 {
+        font-size: 50px;
+    }
+
+    #section #box1 #text-box #para2 {
+        font-size: 18px;
+    }
 }
 
-#section #box1 #text-box #para1{
-    font-size: 50px;
-}
-#section #box1 #text-box #para2{
-    font-size: 18px;
-}
-}
-
-@media (max-width: 769px)
-{
-    section{
+@media (max-width: 769px) {
+    section {
         height: 1700px;
         overflow-x: hidden;
         display: block;
-    } 
-    #section #box1 #text-box #para1{
+    }
+
+    #section #box1 #text-box #para1 {
         font-size: 40px;
     }
-    #section #box1{
+
+    #section #box1 {
         margin-top: 20px;
         grid-template-columns: auto;
     }
-    #section #box2{
+
+    #section #box2 {
         margin-top: 40px;
         height: 40px;
         height: 700px;
         grid-template-columns: auto;
     }
-    #section #box2 #box2-box1{
+
+    #section #box2 #box2-box1 {
         height: 200px;
         width: 250px;
     }
-    #section #box2 #box2-box1 #para1{
+
+    #section #box2 #box2-box1 #para1 {
         font-weight: bold;
         font-size: 18px;
     }
-    #section #box2 #box2-box1 #para2{
+
+    #section #box2 #box2-box1 #para2 {
         font-size: 14px;
         color: grey;
     }
 }
 
-@media (max-width: 430px)
-{
-    section{
+@media (max-width: 430px) {
+    section {
         height: 1650px;
         overflow-x: hidden;
         display: block;
     }
-    #section #box1{
+
+    #section #box1 {
         grid-template-columns: auto;
     }
-    #section #box1 #img-box{
+
+    #section #box1 #img-box {
         margin: 20px auto;
         height: 250px;
         width: 90%;
     }
-    #section #box1 #text-box{
+
+    #section #box1 #text-box {
         display: block;
         width: 90%;
         margin: 0 auto;
     }
-    #section #box1 #text-box #para1{
+
+    #section #box1 #text-box #para1 {
         font-size: 30px;
     }
-    #section #box1 #text-box #para2{
+
+    #section #box1 #text-box #para2 {
         font-size: 14px;
     }
-    #section #box2{
+
+    #section #box2 {
         height: 600px;
         grid-template-columns: auto;
     }
 }
 
-@media (max-width: 376px)
-{
-    section{
+@media (max-width: 376px) {
+    section {
         height: 1650px;
         overflow-x: hidden;
         display: block;
     }
-    #section #box1 #text-box #btn button{
+
+    #section #box1 #text-box #btn button {
         padding: 12px 25px;
         font-size: 14px;
     }
-    #section #box1{
+
+    #section #box1 {
         grid-template-columns: auto;
         height: 600px;
 
     }
-    #section #box2{
+
+    #section #box2 {
         height: 900px;
         grid-template-columns: auto;
     }
 }
 
-@media (max-width: 326px)
-{
-    section{
+@media (max-width: 326px) {
+    section {
         height: 1650px;
         overflow-x: hidden;
         display: block;
     }
-    #section #box1{
+
+    #section #box1 {
         grid-template-columns: auto;
         height: 600px;
     }
-    #section #box1 #text-box{
+
+    #section #box1 #text-box {
         display: block;
         width: 90%;
         margin: 0 auto;
         height: 300px;
     }
-    #section #box2 #box2-box1{
+
+    #section #box2 #box2-box1 {
         height: 280px;
         width: 100%;
     }
-    #section #box1 #text-box #para1{
+
+    #section #box1 #text-box #para1 {
         font-size: 25px;
     }
-    #section #box2 #box2-box1 #para2{
+
+    #section #box2 #box2-box1 #para2 {
         font-size: 12px;
         padding: 5px;
     }
-    #section #box1 #text-box #btn button{
+
+    #section #box1 #text-box #btn button {
         padding: 12px 25px;
         font-size: 14px;
     }
-    #section #box2{
+
+    #section #box2 {
         height: 550px;
         grid-template-columns: auto;
     }
@@ -833,13 +880,13 @@ section #section{
 /* =============products=============== */
 
 
-#products{
+#products {
     height: 700px;
     width: 100%;
     /* border: 1px solid; */
 }
 
-#products #box1{
+#products #box1 {
     height: 180px;
     width: 100%;
     display: flex;
@@ -849,18 +896,20 @@ section #section{
     justify-content: center;
     /* border: 1px solid; */
 }
-#products #box1 #para1{
+
+#products #box1 #para1 {
     font-weight: bold;
     font-size: 40px;
     padding: 15px;
     color: #0F4224;
 }
-#products #box1 #para2{
+
+#products #box1 #para2 {
     font-size: 16px;
     color: grey;
 }
 
-#products #box2{
+#products #box2 {
     height: 520px;
     width: 100%;
     display: grid;
@@ -870,7 +919,8 @@ section #section{
     column-gap: 30px;
     /* border: 1px solid; */
 }
-#products #box2 #box2-box1{
+
+#products #box2 #box2-box1 {
     height: 420px;
     width: 270px;
     display: flex;
@@ -880,27 +930,33 @@ section #section{
     row-gap: 10px;
     /* border: 1px solid; */
 }
-#products #box2 #box2-box1:hover{
+
+#products #box2 #box2-box1:hover {
     box-shadow: 0px 8px 15px #dfdcdc;
 }
-#products #box2 #box2-box1 img{
+
+#products #box2 #box2-box1 img {
     transition: .7s;
 }
-#products #box2 #box2-box1 img:hover{
+
+#products #box2 #box2-box1 img:hover {
     scale: 1.06;
     cursor: pointer;
     transition: .5s;
 }
-#products #box2 #box2-box1 #para1{
+
+#products #box2 #box2-box1 #para1 {
     font-weight: bold;
     font-size: 18px;
 }
-#products #box2 #box2-box1 #para2{
+
+#products #box2 #box2-box1 #para2 {
     font-weight: bold;
     font-size: 16px;
     color: #5EA274;
 }
-#products #box2 #box2-box1 button{
+
+#products #box2 #box2-box1 button {
     background-color: transparent;
     padding: 12px;
     width: 90%;
@@ -910,7 +966,8 @@ section #section{
     font-size: 16px;
     cursor: pointer;
 }
-#products #box2 #box2-box1 button:hover{
+
+#products #box2 #box2-box1 button:hover {
     background-color: #5EA274;
     border-color: #5EA274;
     color: white;
@@ -918,75 +975,80 @@ section #section{
 
 /* ===============media====================================== */
 
-@media(max-width: 1025px)
-{
-    #products{
+@media(max-width: 1025px) {
+    #products {
         height: 1150px;
         overflow-x: hidden;
     }
-    #products #box2{
+
+    #products #box2 {
         grid-template-columns: auto auto auto;
     }
-    #products #box1 #para1{
+
+    #products #box1 #para1 {
         font-size: 40px;
     }
-    #products #box1 #para2{
+
+    #products #box1 #para2 {
         font-size: 20px;
     }
 }
 
 
-@media(max-width: 769px)
-{
-    #products{
+@media(max-width: 769px) {
+    #products {
         height: 1100px;
         overflow-x: hidden;
     }
-    #products #box1{
+
+    #products #box1 {
         display: block
     }
-    #products #box2{
+
+    #products #box2 {
         grid-template-columns: auto auto;
     }
 }
 
-@media(max-width: 430px){
-#products{
-    height: 1900px;
-    width: 100%;
-    display: block;
-    overflow-x: hidden;
-    /* border: 1px solid; */
+@media(max-width: 430px) {
+    #products {
+        height: 1900px;
+        width: 100%;
+        display: block;
+        overflow-x: hidden;
+        /* border: 1px solid; */
+    }
+
+    #products #box1 {
+        display: block
+    }
+
+    #products #box1 #para1 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #products #box1 #para2 {
+        font-size: 16px;
+        color: grey;
+    }
+
+    #products #box2 {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 0px;
+        /* border: 1px solid; */
+    }
+
+    #products #box2 #box2-box1 {
+        height: 420px;
+        width: 270px;
+    }
 }
 
-#products #box1{
-    display: block
-}
-#products #box1 #para1{
-    font-weight: bold;
-    font-size: 30px;
-}
-#products #box1 #para2{
-    font-size: 16px;
-    color: grey;
-}
 
-#products #box2{
-    display: grid;
-    grid-template-columns: auto;
-    column-gap: 0px;
-    /* border: 1px solid; */
-}
-#products #box2 #box2-box1{
-    height: 420px;
-    width: 270px;
-}
-}
-
-
-@media(max-width: 325px)
-{
-    #products #box1 #para2{
+@media(max-width: 325px) {
+    #products #box1 #para2 {
         font-size: 12px;
     }
 }
@@ -994,13 +1056,13 @@ section #section{
 /* ===============rigth for your pet===================== */
 
 
-.right-way{
+.right-way {
     height: 700px;
     width: 100%;
     /* border: 1px solid; */
 }
 
-.right-way #box1{
+.right-way #box1 {
     height: 200px;
     width: 100%;
     display: flex;
@@ -1010,17 +1072,20 @@ section #section{
     gap: 10px;
     /* border: 1px solid; */
 }
-.right-way #box1 #para1{
+
+.right-way #box1 #para1 {
     font-weight: bold;
     font-size: 40px;
     color: #0F4224;
 }
-.right-way #box1 #para2{
+
+.right-way #box1 #para2 {
     font-size: 17px;
     padding: 10px;
     color: grey;
 }
-.right-way #box2{
+
+.right-way #box2 {
     height: 500px;
     width: 100%;
     display: grid;
@@ -1031,7 +1096,7 @@ section #section{
     /* border: 1px solid; */
 }
 
-.right-way #box2-box1{
+.right-way #box2-box1 {
     height: 350px;
     width: 400px;
     display: flex;
@@ -1040,23 +1105,27 @@ section #section{
     justify-content: space-evenly;
     /* border: 1px solid; */
 }
-.right-way #box2-box1 #img{
+
+.right-way #box2-box1 #img {
     height: 270px;
     width: 100%;
     overflow: hidden;
     /* border: 1px solid; */
 }
-.right-way #box2-box1 #img img{
+
+.right-way #box2-box1 #img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: .5s;
 }
-.right-way #box2-box1 #img img:hover{
+
+.right-way #box2-box1 #img img:hover {
     transform: scale(1.07);
     transition: .5s;
 }
-.right-way #box2-box1 #text{
+
+.right-way #box2-box1 #text {
     height: 80px;
     width: 100%;
     text-align: center;
@@ -1066,94 +1135,97 @@ section #section{
     transition: .5s;
     /* border: 1px solid; */
 }
-.right-way #box2-box1 #text:hover{
+
+.right-way #box2-box1 #text:hover {
     color: #0F4224;
     transition: .3s;
     cursor: pointer;
 }
 
 /* ================media====================== */
-@media(max-width: 1025px)
-{
-    .right-way{
+@media(max-width: 1025px) {
+    .right-way {
         height: 1000px;
         width: 100%;
         overflow-x: hidden;
     }
-    .right-way #box2{
+
+    .right-way #box2 {
         grid-template-columns: auto auto;
     }
 }
 
-@media(max-width: 769px)
-{
-    .right-way{
+@media(max-width: 769px) {
+    .right-way {
         height: 1300px;
         width: 100%;
         overflow-x: hidden;
         /* border: 1px solid; */
     }
-    .right-way #box2{
+
+    .right-way #box2 {
         grid-template-columns: auto;
     }
-    .right-way #box2-box1 #img{
+
+    .right-way #box2-box1 #img {
         height: 270px;
         width: 100%;
         align-items: center;
         overflow: hidden;
     }
-    .right-way #box2-box1 #img img{
+
+    .right-way #box2-box1 #img img {
         height: 100%;
         width: 100%;
     }
 }
 
-@media(max-width: 430px)
-{
-    .right-way{
+@media(max-width: 430px) {
+    .right-way {
         height: 1350px;
         width: 100%;
         overflow-x: hidden;
         /* border: 1px solid; */
     }
-    
-    .right-way #box1{
+
+    .right-way #box1 {
         height: 200px;
         width: 100%;
         display: block
     }
-    .right-way #box1 #para1{
+
+    .right-way #box1 #para1 {
         text-align: center;
         font-size: 25px;
         padding: 5px;
     }
-    .right-way #box1 #para2{
+
+    .right-way #box1 #para2 {
         text-align: center;
         font-size: 16px;
     }
-    .right-way #box2{
+
+    .right-way #box2 {
         grid-template-columns: auto;
     }
-    
-    .right-way #box2-box1{
+
+    .right-way #box2-box1 {
         height: 350px;
         width: 350px;
         display: block;
     }
 }
 
-@media(max-width: 376px)
-{
-    .right-way #box2-box1{
+@media(max-width: 376px) {
+    .right-way #box2-box1 {
         height: 350px;
         width: 300px;
         display: block;
     }
 }
 
-@media(max-width: 326px)
-{
-    .right-way #box2-box1{
+@media(max-width: 326px) {
+    .right-way #box2-box1 {
         height: 350px;
         width: 280px;
         display: block;
@@ -1162,7 +1234,7 @@ section #section{
 
 /* ==================story style==================== */
 
-.story{
+.story {
     height: 700px;
     width: 100%;
     display: flex;
@@ -1171,7 +1243,8 @@ section #section{
     justify-content: space-evenly;
     /* border: 1px solid; */
 }
-.story #box1{
+
+.story #box1 {
     height: 200px;
     width: 100%;
     display: flex;
@@ -1181,20 +1254,24 @@ section #section{
     /* border: 1px solid; */
     gap: 10px;
 }
-.story #box1 #para1{
+
+.story #box1 #para1 {
     font-weight: bold;
     color: #0F4224;
     font-size: 35px;
     padding: auto;
 }
-.story #box1 #para1 span{
+
+.story #box1 #para1 span {
     color: #5EA274;
 }
-.story #box1 #para2{
+
+.story #box1 #para2 {
     color: grey;
     padding: 10px;
 }
-.story #box1 button{
+
+.story #box1 button {
     padding: 12px 20px;
     border: 2px solid #0F4224;
     border-radius: 50px;
@@ -1203,7 +1280,8 @@ section #section{
     color: #0F4224;
     transition: .5s;
 }
-.story #box1 button:hover{
+
+.story #box1 button:hover {
     background-color: #5EA274;
     border-color: #5EA274;
     color: white;
@@ -1211,7 +1289,8 @@ section #section{
     scale: 1.08;
     transition: .5s;
 }
-.story #box2{
+
+.story #box2 {
     height: 400px;
     width: 100%;
     display: grid;
@@ -1221,33 +1300,36 @@ section #section{
     column-gap: 30px;
     /* border: 1px solid; */
 }
-.story #box2 #box2-box1{
+
+.story #box2 #box2-box1 {
     height: 300px;
     width: 300px;
     overflow: hidden;
     /* border: 1px solid; */
 }
-.story #box2 #box2-box1 img{
+
+.story #box2 #box2-box1 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: .5s;
 }
-.story #box2 #box2-box1 img:hover{
+
+.story #box2 #box2-box1 img:hover {
     scale: 1.05;
     transition: .4s;
 }
 
 /* =================media====================== */
-@media(max-width: 1025px)
-{
-    .story{
+@media(max-width: 1025px) {
+    .story {
         height: 900px;
         width: 100%;
         display: block;
         overflow-x: hidden;
     }
-    .story #box2{
+
+    .story #box2 {
         height: 400px;
         width: 100%;
         grid-template-columns: auto auto;
@@ -1255,15 +1337,15 @@ section #section{
     }
 }
 
-@media(max-width: 769px)
-{
-    .story{
+@media(max-width: 769px) {
+    .story {
         height: 900px;
         width: 100%;
         display: block;
         overflow-x: hidden;
     }
-    .story #box2{
+
+    .story #box2 {
         height: 400px;
         width: 100%;
         grid-template-columns: auto auto;
@@ -1271,29 +1353,32 @@ section #section{
     }
 }
 
-@media(max-width: 430px)
-{
-    .story{
+@media(max-width: 430px) {
+    .story {
         height: 1500px;
         width: 100%;
         display: block;
         overflow-x: hidden;
     }
-    .story #box1{
+
+    .story #box1 {
         height: 230px;
         width: 100%;
         display: flex;
         align-content: center;
     }
-    .story #box1 #para1{
+
+    .story #box1 #para1 {
         text-align: center;
         font-size: 25px;
         padding: 10px;
     }
-    .story #box1 p{
+
+    .story #box1 p {
         text-align: center;
     }
-    .story #box2{
+
+    .story #box2 {
         height: 400px;
         width: 100%;
         grid-template-columns: auto;
@@ -1303,7 +1388,7 @@ section #section{
 
 /* =================footer================= */
 
-footer{
+footer {
     height: 420px;
     width: 100%;
     display: flex;
@@ -1312,7 +1397,8 @@ footer{
     justify-content: space-evenly;
     background-color: #5EA274;
 }
-footer #box1{
+
+footer #box1 {
     height: 320px;
     width: 100%;
     display: flex;
@@ -1320,7 +1406,8 @@ footer #box1{
     justify-content: space-around;
     /* border: 1px solid; */
 }
-footer #box1 #box1-box1{
+
+footer #box1 #box1-box1 {
     height: 300px;
     width: 550px;
     display: flex;
@@ -1330,21 +1417,24 @@ footer #box1 #box1-box1{
     margin: 0 auto;
     /* border: 1px solid; */
 }
-footer #box1 #box1-box1 #para1{
+
+footer #box1 #box1-box1 #para1 {
     padding: 10px;
     font-size: 40px;
     font-weight: bold;
     color: black;
 }
-footer #box1 #box1-box1 #para2{
+
+footer #box1 #box1-box1 #para2 {
     font-size: 16px;
     padding: 20px 10px;
     color: black;
 }
-footer #box1 #box1-box1 input{
+
+footer #box1 #box1-box1 input {
     margin-left: 10px;
     height: 50px;
-    width:80%;
+    width: 80%;
     border-radius: 5px;
     padding: 0px 40px;
     border: none;
@@ -1352,7 +1442,8 @@ footer #box1 #box1-box1 input{
     font-size: 14px;
     font-weight: bold;
 }
-footer #box1 #box1-box1 button{
+
+footer #box1 #box1-box1 button {
     margin: 10px;
     padding: 15px 40px;
     font-size: 14px;
@@ -1364,14 +1455,15 @@ footer #box1 #box1-box1 button{
     cursor: pointer;
     transition: .5s;
 }
-footer #box1 #box1-box1 button:hover{
+
+footer #box1 #box1-box1 button:hover {
     background-color: white;
     color: #0F4224;
     transition: .5s;
 }
 
 
-footer #box1 #box1-box2{
+footer #box1 #box1-box2 {
     height: 300px;
     width: 550px;
     display: flex;
@@ -1380,21 +1472,24 @@ footer #box1 #box1-box2{
     /* border: 1px solid; */
 }
 
-footer #box1 #box1-box2 ul li{
+footer #box1 #box1-box2 ul li {
     list-style-type: none;
     font-size: 16px;
     color: black;
     padding: 10px;
     cursor: pointer;
 }
-footer #box1 #box1-box2 ul li:hover{
+
+footer #box1 #box1-box2 ul li:hover {
     text-decoration: underline;
 }
-footer #box1 #box1-box2 ul #main{
+
+footer #box1 #box1-box2 ul #main {
     font-size: 18px;
     font-weight: bold;
 }
-footer #box2{
+
+footer #box2 {
     height: 60px;
     width: 100%;
     display: flex;
@@ -1402,7 +1497,8 @@ footer #box2{
     justify-content: space-between;
 
 }
-footer #box2 #first{
+
+footer #box2 #first {
     height: 50px;
     width: 30%;
     display: flex;
@@ -1410,19 +1506,22 @@ footer #box2 #first{
     justify-content: center;
     gap: 20px;
 }
-footer #box2 #first a{
-    color: black;
+
+footer #box2 #first a {
+    color: #0F4224;
 }
-footer #box2 #second{
+
+footer #box2 #second {
     height: 50px;
     width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: black;
+    color: #0F4224;
 }
-footer #box2 #third{
+
+footer #box2 #third {
     height: 50px;
     width: 30%;
     display: flex;
@@ -1433,148 +1532,164 @@ footer #box2 #third{
 
 /* =========================media============================ */
 
-@media(max-width: 1025px)
-{
-    footer #box2 #third img{
+@media(max-width: 1025px) {
+    footer #box2 #third img {
         width: 95%;
     }
 }
 
-@media(max-width: 769px)
-{
-    footer{
+@media(max-width: 769px) {
+    footer {
         display: block;
         overflow-x: hidden;
     }
-    footer #box1 #box1-box1 #para1{
+
+    footer #box1 #box1-box1 #para1 {
         font-size: 30px;
     }
-    footer #box2 #second{
+
+    footer #box2 #second {
         width: 40%;
     }
-    footer #box2 #third img{
+
+    footer #box2 #third img {
         width: 95%;
     }
 }
 
-@media(max-width: 430px)
-{
-    footer{
+@media(max-width: 430px) {
+    footer {
         height: 700px;
         width: 100%;
         display: block;
         overflow-x: hidden;
     }
-    footer #box1{
+
+    footer #box1 {
         height: 300px;
         width: 100%;
         display: block;
         /* border: 1px solid; */
     }
-    footer #box1 #box1-box1{
+
+    footer #box1 #box1-box1 {
         height: 200px;
         width: 100%;
         display: block;
         margin: 0 auto;
         /* border: 1px solid; */
     }
-    footer #box1 #box1-box1 #para1{
+
+    footer #box1 #box1-box1 #para1 {
         padding: 10px;
         font-size: 30px;
         text-align: center;
     }
-    footer #box1 #box1-box1 #para2{
+
+    footer #box1 #box1-box1 #para2 {
         font-size: 14px;
         text-align: center;
     }
-    footer #box1 #box1-box1 input{
+
+    footer #box1 #box1-box1 input {
         width: 90%;
     }
 
-    footer #box1 #box1-box2{
+    footer #box1 #box1-box2 {
         height: 300px;
         width: 100%;
         display: flex;
     }
-    footer #box1 #box1-box1 input{
+
+    footer #box1 #box1-box1 input {
         width: 90%;
         padding: 10px;
         height: 35px;
         font-size: 12px;
     }
-    footer #box1 #box1-box1 button{
+
+    footer #box1 #box1-box1 button {
         margin: 10px;
         padding: 10px 20px;
         height: 35px;
         font-size: 12px;
     }
 
-    footer #box2{
+    footer #box2 {
         margin-top: 200px;
         width: 100%;
         display: block;
-    
+
     }
-    footer #box2 #first{
+
+    footer #box2 #first {
         width: 100%;
         display: flex;
     }
-    footer #box2 #second{
+
+    footer #box2 #second {
         width: 100%;
         display: block;
         text-align: center;
     }
-    footer #box2 #third{
+
+    footer #box2 #third {
         width: 100%;
         cursor: pointer;
         align-items: center;
         justify-content: center;
     }
 }
-@media(max-width: 376px)
-{
-    footer #box1 #box1-box1 input{
+
+@media(max-width: 376px) {
+    footer #box1 #box1-box1 input {
         width: 90%;
         padding: 10px;
         height: 35px;
         font-size: 12px;
     }
-    footer #box1 #box1-box1 button{
+
+    footer #box1 #box1-box1 button {
         margin: 10px;
         padding: 10px 20px;
         height: 35px;
         font-size: 12px;
     }
-    footer #box2 #third{
+
+    footer #box2 #third {
         width: 100%;
         cursor: pointer;
         align-items: center;
         justify-content: center;
     }
 
-    footer #box2 #third img{
+    footer #box2 #third img {
         width: 90%;
     }
 
 }
-@media(max-width: 326px)
-{
-    footer #box1 #box1-box2{
+
+@media(max-width: 326px) {
+    footer #box1 #box1-box2 {
         margin-top: 20px;
     }
-    footer #box1 #box1-box2 ul li{
+
+    footer #box1 #box1-box2 ul li {
         font-size: 14px;
     }
-    footer #box1 #box1-box2 ul #main{
+
+    footer #box1 #box1-box2 ul #main {
         font-size: 16px;
     }
-    footer #box1 #box1-box1 input{
+
+    footer #box1 #box1-box1 input {
         width: 90%;
         padding: 10px;
         height: 35px;
         font-size: 12px;
     }
-    footer #box1 #box1-box1 button{
+
+    footer #box1 #box1-box1 button {
         margin: 10px;
         padding: 10px 20px;
         height: 35px;
@@ -1582,14 +1697,14 @@ footer #box2 #third{
     }
 }
 
-#discount{
+#discount {
     position: fixed;
     z-index: 8;
     top: 320px;
     height: 40px;
     width: 200px;
     border: 1px solid;
-    margin-left: -82px;
+    margin-left: -5.3%;
     transform: rotate(270deg);
     display: flex;
     align-items: center;
@@ -1600,17 +1715,50 @@ footer #box2 #third{
     cursor: pointer;
 }
 
-#discount p{
+#discount p {
     font-weight: bold;
     color: white;
 }
-#discount i{
+
+#discount i {
     color: white;
 }
 
-@media(max-width:1024px)
-{
- #discount{
-    display: none;
- }
+@media(max-width:1024px) {
+    #discount {
+        display: none;
+    }
+}
+
+#follow {
+    position: fixed;
+    z-index: 8;
+    top: 300px;
+    height: 200px;
+    width: 40px;
+    border: 1px solid;
+    margin-left: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: none;
+}
+
+#follow i {
+    color: #DA3F3F;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+#follow p{
+    font-weight: bold;
+    font-size: 20px;
+    color: #DA3F3F;
+}
+@media(max-width:1024px) {
+    #follow {
+        display: none;
+    }
 }
