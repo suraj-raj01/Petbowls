@@ -63,7 +63,8 @@ html {
 .navbar #last a {
     color: black;
 }
-.navbar #last #carts sup{
+
+.navbar #last #carts sup {
     padding: 3px 6px;
     font-weight: bold;
     font-size: 10px;
@@ -71,39 +72,42 @@ html {
     border-radius: 50%;
     background-color: black;
     color: white;
- }
+}
 
 
 //  =============media================
 
-#logo{
-    display: none;
-}
-#chck, #bars{
+#logo {
     display: none;
 }
 
-@media(max-width: 769px){
-.navbar{
-    display: none;
-    overflow-x: hidden;
-}
-#chck{
+#chck,
+#bars {
     display: none;
 }
 
-#logo{
-    display: block;
-    position: absolute;
-    z-index: 11;
-    margin-left: 580px;
-    padding: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: transparent;
-}
+@media(max-width: 769px) {
+    .navbar {
+        display: none;
+        overflow-x: hidden;
+    }
 
-    #bars{
+    #chck {
+        display: none;
+    }
+
+    #logo {
+        display: block;
+        position: absolute;
+        z-index: 11;
+        margin-left: 580px;
+        padding: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    #bars {
         display: block;
         position: relative;
         z-index: 10;
@@ -113,7 +117,8 @@ html {
         cursor: pointer;
         background-color: white;
     }
-    #chck:checked~ .navbar{
+
+    #chck:checked~.navbar {
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -122,20 +127,25 @@ html {
         justify-content: center;
         gap: 40px;
     }
-    #chck:checked~ .navbar #start{
+
+    #chck:checked~.navbar #start {
         display: none;
     }
-    #chck:checked~ .navbar #mid{
+
+    #chck:checked~.navbar #mid {
         display: block;
     }
-    #chck:checked~ .navbar #mid a{
+
+    #chck:checked~.navbar #mid a {
         display: block;
         padding: 10px;
     }
-    #chck:checked~ .navbar #last{
+
+    #chck:checked~.navbar #last {
         display: flex;
     }
-    #chck:checked~ .navbar #last a{
+
+    #chck:checked~.navbar #last a {
         text-decoration: none;
         font-size: 22px;
         display: flex;
@@ -144,44 +154,49 @@ html {
 
 }
 
-@media(max-width: 426px){
-    .navbar{
+@media(max-width: 426px) {
+    .navbar {
         overflow-x: hidden;
     }
-    #logo{
+
+    #logo {
         margin-left: 240px;
     }
 }
-@media(max-width: 376px)
-{
-    .navbar{
+
+@media(max-width: 376px) {
+    .navbar {
         overflow-x: hidden;
     }
-    #logo{
+
+    #logo {
         margin-left: 180px;
     }
 }
-@media(max-width: 325px)
-{
-    .navbar{
+
+@media(max-width: 325px) {
+    .navbar {
         overflow-x: hidden;
     }
-    #logo{
+
+    #logo {
         margin-left: 150px;
     }
 }
+
 /* ============================navbar style end================= */
 
 // ===========hero section====================
 
-.hero{
+.hero {
     height: 750px;
     width: 100%;
     display: grid;
     grid-template-columns: auto;
     background-color: white;
 }
-.hero #box1{
+
+.hero #box1 {
     height: 150px;
     width: 100%;
     display: flex;
@@ -189,17 +204,20 @@ html {
     align-items: center;
     justify-content: center;
 }
-.hero #box1 #register{
+
+.hero #box1 #register {
     font-size: 45px;
     font-weight: bolder;
     padding: 15px 0px;
     color: #0F4224;
 }
-.hero #box1 a{
+
+.hero #box1 a {
     text-decoration: none;
     color: #0F4224;
 }
-.hero #box2{
+
+.hero #box2 {
     margin: 0 auto;
     gap: 15px;
     height: 600px;
@@ -210,22 +228,23 @@ html {
     justify-content: center;
 }
 
-.hero #box2 #register{
-     font-size: 25px;
-     font-weight: bold;
-     color: #0F4224;
-     padding: 10px 0px;
+.hero #box2 #register {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0F4224;
+    padding: 10px 0px;
 }
 
-.hero #box2 input{
-     width: 95%;
-     padding: 15px 15px;
-     border: none;
-     border-radius: 5px;
-     box-shadow: 0px 0px 1px gray;
-     font-size: 16px;
+.hero #box2 input {
+    width: 95%;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px gray;
+    font-size: 16px;
 }
-.hero #box2 #btn1{
+
+.hero #box2 #btn1 {
     padding: 15px 15px;
     width: 95%;
     font-weight: bold;
@@ -237,7 +256,7 @@ html {
     transition: .4s;
 }
 
-.hero #box2 #btn2{
+.hero #box2 #btn2 {
     padding: 15px 15px;
     width: 95%;
     font-weight: bold;
@@ -248,11 +267,13 @@ html {
     border-radius: 50px;
     transition: .4s;
 }
-.hero #box2 #btn2 a{
+
+.hero #box2 #btn2 a {
     color: #0F4224;
     text-decoration: none;
 }
-.hero #box2 button:hover{
+
+.hero #box2 button:hover {
     box-shadow: 5px 5px 10px #0F4224;
     transition: 0.4s;
     cursor: pointer;
@@ -260,54 +281,57 @@ html {
 
 
 // ===============hero media==================
-@media(max-width: 1441px)
-{
-    .hero #box2{
+@media(max-width: 1441px) {
+    .hero #box2 {
         width: 50%;
     }
-    .hero #box2 #btn1{
+
+    .hero #box2 #btn1 {
         width: 95%;
     }
-    .hero #box2 #btn2{
+
+    .hero #box2 #btn2 {
         width: 95%;
     }
 }
 
-@media(max-width: 1025px)
-{
-    .hero #box2{
+@media(max-width: 1025px) {
+    .hero #box2 {
         width: 50%;
     }
-    .hero #box2 #btn1{
+
+    .hero #box2 #btn1 {
         width: 95%;
     }
-    .hero #box2 #btn2{
+
+    .hero #box2 #btn2 {
         width: 95%;
     }
 }
 
-@media(max-width: 769px)
-{
-    .hero #box2{
+@media(max-width: 769px) {
+    .hero #box2 {
         width: 60%;
     }
-    .hero #box2 #btn1{
+
+    .hero #box2 #btn1 {
         width: 95%;
     }
-    .hero #box2 #btn2{
+
+    .hero #box2 #btn2 {
         width: 95%;
     }
 }
 
-@media(max-width: 430px)
-{
-    .hero{
+@media(max-width: 430px) {
+    .hero {
         height: 750px;
         width: 100%;
         display: grid;
         overflow-x: hidden;
     }
-    .hero #box1{
+
+    .hero #box1 {
         margin: 0 auto;
         display: block;
         display: flex;
@@ -316,25 +340,27 @@ html {
         justify-content: center;
         overflow-x: hidden;
     }
-        .hero #box2 {
-            margin: 0 auto;
-            gap: 15px;
-            height: 600px;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            overflow-x: hidden;
-        }
-    
-        .hero #box2 #btn1{
-            width: 95%;
-        }
-        .hero #box2 #btn2{
-            width: 95%;
-        }
-   
+
+    .hero #box2 {
+        margin: 0 auto;
+        gap: 15px;
+        height: 600px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .hero #box2 #btn1 {
+        width: 95%;
+    }
+
+    .hero #box2 #btn2 {
+        width: 95%;
+    }
+
 }
 
 
@@ -342,7 +368,7 @@ html {
 
 /* =================footer================= */
 
-footer{
+footer {
     height: 420px;
     width: 100%;
     display: flex;
@@ -351,7 +377,8 @@ footer{
     justify-content: space-evenly;
     background-color: #5EA274;
 }
-footer #box1{
+
+footer #box1 {
     height: 320px;
     width: 100%;
     display: flex;
@@ -359,7 +386,8 @@ footer #box1{
     justify-content: space-around;
     /* border: 1px solid; */
 }
-footer #box1 #box1-box1{
+
+footer #box1 #box1-box1 {
     height: 300px;
     width: 550px;
     display: flex;
@@ -369,21 +397,24 @@ footer #box1 #box1-box1{
     margin: 0 auto;
     /* border: 1px solid; */
 }
-footer #box1 #box1-box1 #para1{
+
+footer #box1 #box1-box1 #para1 {
     padding: 10px;
     font-size: 40px;
     font-weight: bold;
     color: black;
 }
-footer #box1 #box1-box1 #para2{
+
+footer #box1 #box1-box1 #para2 {
     font-size: 16px;
     padding: 20px 10px;
     color: black;
 }
-footer #box1 #box1-box1 input{
+
+footer #box1 #box1-box1 input {
     margin-left: 10px;
     height: 50px;
-    width:80%;
+    width: 80%;
     border-radius: 5px;
     padding: 0px 40px;
     border: none;
@@ -391,7 +422,8 @@ footer #box1 #box1-box1 input{
     font-size: 14px;
     font-weight: bold;
 }
-footer #box1 #box1-box1 button{
+
+footer #box1 #box1-box1 button {
     margin: 10px;
     padding: 15px 40px;
     font-size: 14px;
@@ -403,14 +435,15 @@ footer #box1 #box1-box1 button{
     cursor: pointer;
     transition: .5s;
 }
-footer #box1 #box1-box1 button:hover{
+
+footer #box1 #box1-box1 button:hover {
     background-color: white;
     color: #0F4224;
     transition: .5s;
 }
 
 
-footer #box1 #box1-box2{
+footer #box1 #box1-box2 {
     height: 300px;
     width: 550px;
     display: flex;
@@ -419,21 +452,24 @@ footer #box1 #box1-box2{
     /* border: 1px solid; */
 }
 
-footer #box1 #box1-box2 ul li{
+footer #box1 #box1-box2 ul li {
     list-style-type: none;
     font-size: 16px;
     color: black;
     padding: 10px;
     cursor: pointer;
 }
-footer #box1 #box1-box2 ul li:hover{
+
+footer #box1 #box1-box2 ul li:hover {
     text-decoration: underline;
 }
-footer #box1 #box1-box2 ul #main{
+
+footer #box1 #box1-box2 ul #main {
     font-size: 18px;
     font-weight: bold;
 }
-footer #box2{
+
+footer #box2 {
     height: 60px;
     width: 100%;
     display: flex;
@@ -441,7 +477,8 @@ footer #box2{
     justify-content: space-between;
 
 }
-footer #box2 #first{
+
+footer #box2 #first {
     height: 50px;
     width: 30%;
     display: flex;
@@ -449,10 +486,12 @@ footer #box2 #first{
     justify-content: center;
     gap: 20px;
 }
-footer #box2 #first a{
+
+footer #box2 #first a {
     color: black;
 }
-footer #box2 #second{
+
+footer #box2 #second {
     height: 50px;
     width: 15%;
     display: flex;
@@ -461,7 +500,8 @@ footer #box2 #second{
     font-weight: bold;
     color: black;
 }
-footer #box2 #third{
+
+footer #box2 #third {
     height: 50px;
     width: 30%;
     display: flex;
@@ -472,153 +512,168 @@ footer #box2 #third{
 
 /* =========================media============================ */
 
-@media(max-width: 1025px)
-{
-    footer #box2 #third img{
+@media(max-width: 1025px) {
+    footer #box2 #third img {
         width: 95%;
     }
 }
 
-@media(max-width: 769px)
-{
-    footer{
+@media(max-width: 769px) {
+    footer {
         display: block;
         overflow-x: hidden;
     }
-    footer #box1 #box1-box1 #para1{
+
+    footer #box1 #box1-box1 #para1 {
         font-size: 30px;
     }
-    footer #box2 #second{
+
+    footer #box2 #second {
         width: 40%;
     }
-    footer #box2 #third img{
+
+    footer #box2 #third img {
         width: 95%;
     }
 }
 
-@media(max-width: 430px)
-{
-    footer{
+@media(max-width: 430px) {
+    footer {
         height: 700px;
         width: 100%;
         display: block;
         overflow-x: hidden;
     }
-    footer #box1{
+
+    footer #box1 {
         height: 300px;
         width: 100%;
         display: block;
         /* border: 1px solid; */
     }
-    footer #box1 #box1-box1{
+
+    footer #box1 #box1-box1 {
         height: 200px;
         width: 100%;
         display: block;
         margin: 0 auto;
         /* border: 1px solid; */
     }
-    footer #box1 #box1-box1 #para1{
+
+    footer #box1 #box1-box1 #para1 {
         padding: 10px;
         font-size: 30px;
         text-align: center;
     }
-    footer #box1 #box1-box1 #para2{
+
+    footer #box1 #box1-box1 #para2 {
         font-size: 14px;
         color: black;
         text-align: center;
     }
-    footer #box1 #box1-box1 input{
+
+    footer #box1 #box1-box1 input {
         width: 90%;
     }
 
-    footer #box1 #box1-box2{
+    footer #box1 #box1-box2 {
         height: 300px;
         width: 100%;
         display: flex;
     }
-    footer #box1 #box1-box1 input{
+
+    footer #box1 #box1-box1 input {
         width: 90%;
         padding: 10px;
         height: 35px;
         font-size: 12px;
     }
-    footer #box1 #box1-box1 button{
+
+    footer #box1 #box1-box1 button {
         margin: 10px;
         padding: 10px 20px;
         height: 35px;
         font-size: 12px;
     }
 
-    footer #box2{
+    footer #box2 {
         margin-top: 200px;
         width: 100%;
         display: block;
-    
+
     }
-    footer #box2 #first{
+
+    footer #box2 #first {
         width: 100%;
         display: flex;
     }
-    footer #box2 #second{
+
+    footer #box2 #second {
         width: 100%;
         display: block;
         text-align: center;
     }
-    footer #box2 #third{
+
+    footer #box2 #third {
         width: 100%;
         cursor: pointer;
         align-items: center;
         justify-content: center;
     }
 }
-@media(max-width: 376px)
-{
-    footer #box1 #box1-box1 input{
+
+@media(max-width: 376px) {
+    footer #box1 #box1-box1 input {
         width: 90%;
         padding: 10px;
         height: 35px;
         font-size: 12px;
     }
-    footer #box1 #box1-box1 button{
+
+    footer #box1 #box1-box1 button {
         margin: 10px;
         padding: 10px 20px;
         height: 35px;
         font-size: 12px;
     }
-    footer #box2 #third{
+
+    footer #box2 #third {
         width: 100%;
         cursor: pointer;
         align-items: center;
         justify-content: center;
     }
 
-    footer #box2 #third img{
+    footer #box2 #third img {
         width: 90%;
     }
 
 }
-@media(max-width: 326px)
-{
-    footer #box1 #box1-box2{
+
+@media(max-width: 326px) {
+    footer #box1 #box1-box2 {
         margin-top: 20px;
     }
-    footer #box1 #box1-box2 ul li{
+
+    footer #box1 #box1-box2 ul li {
         font-size: 14px;
     }
-    footer #box1 #box1-box2 ul #main{
+
+    footer #box1 #box1-box2 ul #main {
         font-size: 16px;
     }
-    footer #box1 #box1-box1 input{
+
+    footer #box1 #box1-box1 input {
         width: 90%;
         padding: 10px;
         height: 35px;
         font-size: 12px;
     }
-    footer #box1 #box1-box1 button{
+
+    footer #box1 #box1-box1 button {
         margin: 10px;
         padding: 10px 20px;
         height: 35px;
         font-size: 12px;
     }
 }
-
