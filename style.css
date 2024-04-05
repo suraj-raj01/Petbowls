@@ -1757,7 +1757,7 @@ footer #box2 #third {
     font-size: 20px;
     color: #DA3F3F;
 }
-@media(max-width:1024px) {
+@media(max-width:1025px) {
     #follow {
         display: none;
     }
