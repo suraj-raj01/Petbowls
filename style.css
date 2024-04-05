@@ -1724,7 +1724,7 @@ footer #box2 #third {
     color: white;
 }
 
-@media(max-width:1024px) {
+@media(max-width:1025px) {
     #discount {
         display: none;
     }
