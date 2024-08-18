@@ -1,8 +1,8 @@
-#PET STORE WEBSITE
+# PET STORE WEBSITE
 <br>
-Author:- SURAJ KUMAR
+Made By:- **SURAJ KUMAR**
 <br>
-Responsive:- Yes.
+**Responsive:**- Yes.
 <br>
 Mobile View
 <br>
@@ -14,9 +14,9 @@ Laptop (1440px) View
 <br>
 Technology Used:-
 <br>
-HTML
+**HTML**
 <br>
-CSS & SCSS
+**CSS & SCSS**
 <br>
 WEBSITE LINK:-
 <br>
